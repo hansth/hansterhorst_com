@@ -82,6 +82,7 @@ html {
   -webkit-text-size-adjust: 100%;
   height: 100%;
   scroll-padding-bottom: 50px; /* Add padding to account for sticky footer */
+  scroll-padding-top: 60px; /* Add padding to account for sticky header */
 }
 
 body {
@@ -98,6 +99,7 @@ body {
 
 main {
   margin-bottom: var(--spacing-md);
+  margin-top: var(--spacing-sm);
 }
 
 a {
@@ -225,6 +227,15 @@ p > code ::selection {
 
 .terms-list ul li {
   display: inline-block;
+}
+
+/* Header styles */
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg-primary);
+  z-index: 100;
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* Path navigation styles */
