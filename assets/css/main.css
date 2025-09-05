@@ -81,6 +81,7 @@ html {
   margin: 0 0 0 calc(100vw - 100%);
   -webkit-text-size-adjust: 100%;
   height: 100%;
+  scroll-padding-bottom: 50px; /* Add padding to account for sticky footer */
 }
 
 body {
@@ -93,6 +94,10 @@ body {
   justify-content: center;
   padding: var(--spacing-lg);
   gap: var(--spacing-lg);
+}
+
+main {
+  margin-bottom: var(--spacing-md);
 }
 
 a {
@@ -167,6 +172,12 @@ footer {
   align-items: center;
   /*padding: calc(var(--spacing-base) * 2) 0;*/
   /*text-align: center;*/
+  position: sticky;
+  bottom: 0;
+  background-color: var(--color-bg-primary);
+  z-index: 100;
+  padding: var(--spacing-sm) 0;
+  border-top: 1px solid var(--color-border);
 }
 footer p {
   margin-bottom: 0;
