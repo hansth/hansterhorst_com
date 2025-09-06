@@ -3,11 +3,11 @@ name = 'hansterhorst'
 compatibility_date = "2025-09-06"
 
 [[routes]]
-pattern = "hansterhorst.com/*"
+pattern = "hansterhorst.com"
 custom_domain = true
 
 [[routes]]
-pattern = "www.hansterhorst.com/*"
+pattern = "www.hansterhorst.com"
 custom_domain = true
 
 [build]
