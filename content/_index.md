@@ -9,14 +9,15 @@ technology and continuous learning.
 
 ## My Journey
 
-Four years ago, at the age of 50, I made the leap into software development. It was one of the most exciting and
+A few years ago, at the age of 49, I made the leap into software development. It was one of the most exciting and
 rewarding decisions of my life. I started working with **Java** and **Angular**, building applications and sharpening my
 skills as a developer.
 
-Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp), which opened the door to a whole new world of modern practices and
-tools. I’m now diving deeper into **DevOps** — exploring automation, CI/CD, cloud technologies, and everything in
-between. To put theory into practice, I'm building my own **Kubernetes HomeLab**, where I can experiment with setups,
-test new tools, and break things to fix them, as part of my hands-on learning.
+Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp), which opened
+the door to a whole new world of modern practices and tools. I’m now diving deeper into **DevOps** — exploring
+automation, CI/CD, cloud technologies, and everything in between. To put theory into practice, I'm building my own
+**Kubernetes HomeLab**, where I can experiment with setups, test new tools, and break things to fix them, as part of my
+hands-on learning.
 
 ## My Goal
 
@@ -27,5 +28,6 @@ experiences can help others who are learning or switching careers into tech, the
 ## Beyond Tech
 
 I’ve always been curious about technology and enjoy exploring new ideas and tools. But when I’m not coding,
-experimenting with my **HomeLab**, or tinkering with DevOps tools, you’ll likely find me outdoors on my **mountain bike** enjoying the trails or going on **bikepacking** adventures — clearing my head and finding inspiration and ideas in
+tinkering with my **HomeLab**, or experimenting with DevOps tools, you’ll likely find me outdoors on my **mountain bike
+** enjoying the trails or going on **bikepacking** adventures — clearing my head and finding inspiration and ideas in
 nature.
