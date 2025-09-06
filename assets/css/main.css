@@ -1,6 +1,6 @@
 :root {
   /* Typography */
-  --spacing-base: 1.5em;
+  --spacing-base: 1.4em;
   --font-family-mono: monospace;
   --font-size-base: 1.3em;
   --font-size-small: 0.9em;
@@ -21,7 +21,7 @@
   --color-selection-code-bg: #e0c9a6;
 
   /* Layout */
-  --container-width: 64ch;
+  --container-width: 80ch;
   --border-radius: 3px;
   --gap-base: 1em;
   --gap-small: 0.5em;
@@ -94,11 +94,11 @@ body {
   grid-template-columns: minmax(auto, var(--container-width));
   justify-content: center;
   padding: var(--spacing-lg);
-  gap: var(--spacing-lg);
+  gap: var(--gap-base);
 }
 
 main {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
   margin-top: var(--spacing-sm);
 }
 
@@ -112,6 +112,7 @@ a {
 p,
 pre {
   margin: var(--spacing-base) 0;
+  margin-top: calc(var(--spacing-base) / 2);
 }
 
 h1,
@@ -120,7 +121,28 @@ h3,
 h4,
 h5 {
   margin: var(--spacing-base) 0;
+  margin-bottom: calc(var(--spacing-base) / 2);
   font-weight: bold;
+}
+
+h1 {
+  font-size: var(--font-size-base);
+}
+
+h2 {
+  font-size: calc(var(--font-size-base) / 1.1);
+}
+
+h3 {
+  font-size: calc(var(--font-size-base) / 1.13);
+}
+
+h4 {
+  font-size: calc(var(--font-size-base) / 1.134);
+}
+
+h5 {
+  font-size: calc(var(--font-size-base) / 1.135);
 }
 
 h2 {
@@ -142,21 +164,21 @@ h5 {
   counter-increment: h5;
 }
 
-/* nested counters */
+/* DISABLED nested counters */
 h2::before {
-  content: counter(h2) ". ";
+  /*content: counter(h2) ". ";*/
 }
 
 h3::before {
-  content: counter(h2) "." counter(h3) ". ";
+  /*content: counter(h2) "." counter(h3) ". ";*/
 }
 
 h4::before {
-  content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+  /*content: counter(h2) "." counter(h3) "." counter(h4) ". ";*/
 }
 
 h5::before {
-  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+  /*content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";*/
 }
 
 .highlight {
@@ -179,7 +201,7 @@ footer {
   background-color: var(--color-bg-primary);
   z-index: 100;
   padding: var(--spacing-sm) 0;
-  border-top: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-border);
 }
 footer p {
   margin-bottom: 0;
@@ -191,11 +213,12 @@ footer a {
 
 pre {
   background: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-border);
   padding: var(--spacing-sm);
   border-radius: var(--border-radius);
   white-space: pre-wrap;
   word-wrap: break-word;
+  margin: 5px 0 5px 0;
 }
 
 pre ::selection {
@@ -205,7 +228,7 @@ pre ::selection {
 
 p > code {
   background: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-border);
   border-radius: var(--border-radius);
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -214,6 +237,11 @@ p > code {
 p > code ::selection {
   background: var(--color-selection-code-bg);
   color: var(--color-text-primary);
+}
+
+ul li code {
+  font-weight: bold;
+  color: #006fff
 }
 
 .terms-list {
@@ -420,6 +448,10 @@ strong {
   font-weight: bold;
 }
 
+p {
+  margin-bottom: 5px
+}
+
 em {
   font-style: italic;
 }
@@ -444,8 +476,9 @@ blockquote > :last-child {
 /* Table of Contents */
 .toc {
   margin: var(--spacing-base) 0;
+  margin-top: 0;
   padding: var(--spacing-sm);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-border);
   background: var(--color-bg-secondary);
   border-radius: var(--border-radius);
 }
@@ -475,10 +508,9 @@ blockquote > :last-child {
 
 @media (max-device-width: 600px) {
   body {
-    padding-top: 2em;
+    gap: 0;
+    padding: 1em;
+    font: var(--font-size-small) / var(--spacing-base) var(--font-family-mono);
   }
 
-  pre {
-    max-width: calc(100vw - 4em);
-  }
 }
