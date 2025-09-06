@@ -6,6 +6,10 @@ compatibility_date = "2025-07-31"
 pattern = "hansterhorst.com"
 custom_domain = true
 
+[[routes]]
+pattern = "www.hansterhorst.com"
+custom_domain = true
+
 [build]
 command = "hugo"
 
