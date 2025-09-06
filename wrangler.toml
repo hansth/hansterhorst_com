@@ -2,6 +2,10 @@
 name = 'hansterhorst'
 compatibility_date = "2025-07-31"
 
+[[routes]]
+pattern = "hansterhorst.com"
+custom_domain = true
+
 [build]
 command = "hugo"
 
