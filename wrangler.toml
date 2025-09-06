@@ -1,4 +1,5 @@
-name = "hosting-cloudflare-worker"
+# wrangler.toml
+name = 'hansterhorst'
 compatibility_date = "2025-07-31"
 
 [build]
