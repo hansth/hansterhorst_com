@@ -22,7 +22,7 @@
 
   /* Layout */
   --container-width: 80ch;
-  --container-width-small: 100vw;
+  --container-width-small: 95vw;
   --border-radius: 3px;
   --gap-base: 1em;
   --gap-small: 0.5em;
@@ -182,6 +182,9 @@ h5::before {
   /*content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";*/
 }
 
+p {
+  text-align: justify;
+}
 .highlight {
   background: var(--color-border);
   padding: 0 3px;
