@@ -253,6 +253,12 @@ ul li code {
   color: #006fff
 }
 
+hr {
+  margin: var(--spacing-base) 0;
+  border: none;
+  border-top: 2px solid var(--color-border);
+}
+
 .terms-list {
   padding-bottom: var(--spacing-base);
 }

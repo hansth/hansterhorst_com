@@ -6,3 +6,15 @@ theme: shibui
 params:
   author: Hans ter Horst
   email: hbhorst@mac.com
+  
+menu:
+  main:
+    - name: "About"
+      url: "/about/"
+      weight: 1
+    - name: "Posts"
+      url: "/posts/"
+      weight: 2
+    - name: "Tags"
+      url: "/tags/"
+      weight: 3
