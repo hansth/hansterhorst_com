@@ -28,6 +28,5 @@ experiences can help others who are learning or switching careers into tech, the
 ## Beyond Tech
 
 I’ve always been curious about technology and enjoy exploring new ideas and tools. But when I’m not coding,
-tinkering with my **HomeLab**, or experimenting with DevOps tools, you’ll likely find me outdoors on my **mountain bike
-** enjoying the trails or going on **bikepacking** adventures — clearing my head and finding inspiration and ideas in
+tinkering with my **HomeLab**, or experimenting with DevOps tools, you’ll likely find me outdoors on my **mountain bike** enjoying the trails or going on **bikepacking** adventures — clearing my head and finding inspiration and ideas in
 nature.
