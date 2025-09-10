@@ -271,25 +271,28 @@ To enable deployment, you’ll need to add a `wrangler.toml` file. This configur
 
 **Create the `wrangler.toml` worker file**:
 ```toml
-name = 'hansterhorst'  
-  
-[[routes]]  
-pattern = "hansterhorst.com/*"  
-custom_domain = true  
-  
-[[routes]]  
-pattern = "www.hansterhorst.com/*"  
-custom_domain = true  
-  
-[build]  
-command = "hugo"  
-  
-[assets]  
-directory = "./public"  
+name = 'hansterhorst'
+compatibility_date = "2025-09-06"
+
+[[routes]]
+pattern = "hansterhorst.com"
+custom_domain = true
+
+[[routes]]
+pattern = "www.hansterhorst.com"
+custom_domain = true
+
+[build]
+command = "hugo"
+
+[assets]
+directory = "./public"
 not_found_handling = "404-page"
 ```
 - `name = 'hansterhorst'`: Sets the project name in Cloudflare
-- `hansterhorst.com/*` and `www.hansterhorst.com/*` are configured as custom domains.
+- `compatibility_date`: Specifies which version of Cloudflare's runtime APIs to use.
+- `[[routes]]`: Section that defines how the site handles different domains.
+- `hansterhorst.com` and `www.hansterhorst.com` are configured as custom domains.
 - `custom_domain = true`: Tells Cloudflare these are your own domains.
 - `command = "hugo"`: Tells Cloudflare to run this build command.
 - `directory = "./public"`: Specifies the built directory of files.
@@ -312,9 +315,9 @@ https://hansterhorst.com
 
 ## Conclusion
 
-By combining Hugo with Cloudflare Pages, I now have a fast, reliable, and fully customizable static website. This setup not only simplifies the process of publishing my DevOps articles but also gives me the flexibility to scale the site as my needs grow.
+By combining Hugo with Cloudflare Pages, I now have a fast, reliable, and fully customizable static website. This setup not only simplifies the process of publishing my DevOps articles but also provides me with the flexibility to scale the site as my requirements increase.
 
-What I like most about this approach is the simplicity. I can focus on writing content in Markdown while Hugo handles the structure, and Cloudflare ensures smooth, global delivery, and automatic builds (CI/CD). Over time, I can enhance the site further by adding custom layouts or integrations with other tools — all without sacrificing performance.
+What I like most about this approach is the simplicity. I can focus on writing content in Markdown while Hugo handles the structure, and Cloudflare ensures smooth, global delivery, and automatic builds (CI/CD). Over time, I can improve the site by adding custom layouts or integrating with other tools, all without affecting its performance.
 
 In short, Hugo has given me a developer-friendly workflow, and Cloudflare has provided a robust platform to share my learning journey with the world.
 
