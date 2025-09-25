@@ -293,10 +293,10 @@ not_found_handling = "404-page"
 - `directory = "./public"`: Specifies the built directory of files.
 - `not_found_handling`: Tells Cloudflare to serve a custom 404 page when someone visits a non-existent URL
 
-**Push the file to Git**:
+**Commit and push file to Git**:
 ```bash
 git add wrangler.toml
-git commit -m "Create configuration file for Cloudflare Worker"
+git commit -m "Created config file for Cloudflare Worker"
 git push
 ```
 
@@ -326,4 +326,4 @@ In short, Hugo has given me a developer-friendly workflow, and Cloudflare has pr
 
 This repository contains the source code for my personal website.
 
->**_GitHub repository_**: [hansterhorst_com](https://github.com/hansth/hansterhorst_com)
+>**_GitHub_**: [hansterhorst_com](https://github.com/hansth/hansterhorst_com)
