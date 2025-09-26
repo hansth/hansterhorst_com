@@ -5,7 +5,7 @@ Hello, I’m **Hans ter Horst** — a software developer with a background in **
 
 ## My Journey
 
-A few years ago, at the age of 49, I decided to learn software development, and it has become one of the most exciting and learning journey of my life. I started working with **Java** and **Angular**, building applications and sharpening my skills as a developer.
+A few years ago, at the age of 49, I decided to learn software development, and it has become one of the most exciting and learning journeys of my life. I started working with **Java** and **Angular**, building applications and sharpening my skills as a developer.
 
 Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp), which introduced me to a whole new world of tools, DevOps principles, CI/CD, cloud technologies, and more. To put this theory into practice, I'm started to build my own **Kubernetes HomeLab**, where I can experiment with setups, test new tools, and break things to fix them, as part of my hands-on learning.
 

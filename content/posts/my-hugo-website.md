@@ -8,8 +8,6 @@ As a software developer with a background in **Java** and **Angular**, I’ve be
 
 My goal wasn’t to build a complex application. Instead, I needed an easy way to transform my Markdown articles into a clean, professional-looking website that I could deploy quickly. So I can focus on writing and publishing my insights and hands-on learning — without the overhead of managing servers, databases, or backend code.
 
->**_GitHub repository_**: [Repository](https://github.com/hansth/hansterhorst_com)
-
 ## Why I choose Hugo
 
 Hugo is a **free, open-source static site generator** that converts Markdown files into fast, reliable web pages. It gave me exactly what I was looking for:
@@ -50,7 +48,7 @@ cd /Projects
 hugo new site <PROJECT_NAME> --format yaml  
 ```
 - `hugo new site`: Creates a new Hugo site.
-- `-f yaml`: Sets the configuration file format to **YAML** instead of the default TOML. I choose for YAML for its readable syntax.
+- `--format`: Format that sets the configuration file format to **YAML** instead of the default TOML. I choose for YAML for its readable syntax.
 
 This command sets up the foundation for the website. Hugo generates a directory with a complete project file structure inside it.
 
@@ -185,7 +183,7 @@ Hugo makes this easy with its built-in **menu system**, which you configure in t
 **Create the menu links**:
 ```yaml  
 baseURL: https://<WEBSITE_URL>    
-#.   
+#...
 menu:      
   main:      
     - name: Posts      
@@ -326,4 +324,4 @@ In short, Hugo has given me a developer-friendly workflow, and Cloudflare has pr
 
 This repository contains the source code for my personal website.
 
->**_GitHub_**: [hansterhorst_com](https://github.com/hansth/hansterhorst_com)
+>**GitHub**: [repository](https://github.com/hansth/hansterhorst_com)

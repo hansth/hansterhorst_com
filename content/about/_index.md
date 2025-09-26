@@ -13,7 +13,6 @@ Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-n
 ## Personal Information
 
 - **Name**: Hans Ter Horst
-- **Email**: [hbhterhorst@icloud.com](mailto:hbhorst@mac.com)
 - **LinkedIn**: [linkedin.com/in/hansth](https://www.linkedin.com/in/hansth/)
 - **Website**: [www.hansterhorst.com](http://www.hansterhorst.com)
 
@@ -24,17 +23,17 @@ Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-n
 **Software Developer**\
 *Twict – April 2022 to Present*
 
-- Implemented **i18n translation functionality** into the frontend application, improving accessibility for international users.
-- Developed a cost-effective video streaming solution for an educational platform using Raspberry Pi devices.
-- Developed a **reusable phone validation Angular component** using Google NPM package google-libphonenumber, for international number support.
-- Contributed to overall code quality improvements, refactoring, and optimization for maintainability and performance.
+- Implemented **i18n translation** functionality into the frontend application, improving accessibility for international users.
+- Developed a cost-effective video streaming solution for an educational platform using **Raspberry Pi's**.
+- Developed a **reusable phone validation Angular component** using NPM package google-libphonenumber, for international number support.
+- **Contributed** to overall code quality improvements, refactoring, and optimization for maintainability and performance.
 
 **Matchmove Artist**\
 *Escape Studios, London – Oct 2007 to Dec 2007*
 
-- Worked on the Walt Disney movie The Chronicles of Narnia: Prince Caspian.
-- Responsible for tracking movie shots to ensure accurate integration of VFX elements into live-action footage.
-- Collaborated with the VFX team to maintain consistency and realism across visual effects shots.
+- Worked on the Walt Disney movie, **The Chronicles of Narnia: Prince Caspian**.
+- Responsible for **tracking movie shots** to ensure accurate integration of VFX elements into live-action footage.
+- **Collaborated** with the VFX team to maintain consistency and realism across visual effects shots.
 
 ---
 
@@ -44,6 +43,10 @@ Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-n
 *Online, 01/2025 – 08/2025*
 - Intensive DevOps program covering automation, CI/CD, cloud platforms, Kubernetes, and modern DevOps workflows.
 
+**Kubernetes HomeLab**\
+*Self Learning, 2025 - Ongoing*
+- Hands-on experimentation with Kubernetes clusters, cloud-native tooling, and automation through personal HomeLab projects.
+
 **Full Stack Developer**\
 *Hogeschool Novi, 09/2021 – 02/2022*
 - HBO comprehensive bootcamp in full-stack web development, focusing on Java and React.
@@ -52,10 +55,6 @@ Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-n
 *Escape Studios London, 03/2007 – 08/2007*
 - Professional training in 3D modeling, animation, and visual effects using Autodesk Maya.
 
-**Kubernetes HomeLab**\
-*Self Learning, 2025 - Ongoing*
-- Hands-on experimentation with Kubernetes clusters, cloud-native tooling, and automation through personal HomeLab projects.
-
 ---
 
 ## Technical Skills
@@ -63,7 +62,7 @@ Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-n
 - **Languages & Frameworks**: Java, Angular, Hugo, TypeScript, JavaScript
 - **DevOps & Cloud**: Docker, Kubernetes, CI/CD pipelines, GitOps, Jenkins
 - **Infrastructure & Tools**: Linux, Helm, Terraform, Ansible
-- **Other Interests**: HomeLab architecture, automation, continuous learning
+- **Other Interests**: HomeLab, Sport, Movies, Continuous Learning
 
 ---
 
@@ -73,11 +72,11 @@ Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-n
   Gained hands-on experience in modern DevOps practices, automation, CI/CD, and cloud technologies.
 - **Software Development (Java & Angular)**:
   Built applications, enhanced programming and problem-solving skills, and collaborated on various projects.
-- **Matchmove Artist for VFX (2007)**:
-  For the Walt Disney movie The Chronicles of Narnia: Prince Caspian; tracking movie shots to ensure accurate integration of VFX elements into live-action footage.
 - **Kubernetes HomeLab (Ongoing)**:
   Designed and maintain a self-hosted Kubernetes cluster to practice, test tools, break, and fix systems for deeper
   learning.
+- **Matchmove Artist for VFX (2007)**:
+  For the Walt Disney movie The Chronicles of Narnia: Prince Caspian; tracking movie shots to ensure accurate integration of VFX elements into live-action footage.
 
 ---
 
@@ -95,3 +94,4 @@ When I’m not coding or experimenting with DevOps tools, you’ll find me outdo
 
 - Exploring trails on my **mountain bike**.
 - Going on **bikepacking adventures**.
+- Watch biography music movies.
