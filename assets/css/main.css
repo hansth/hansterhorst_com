@@ -75,7 +75,7 @@ ul {
 
 ol {
   list-style-type: decimal;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
 
 html {
@@ -244,6 +244,7 @@ p > code {
   border-radius: var(--border-radius);
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-weight: bold;
 }
 
 p > code ::selection {
@@ -252,8 +253,12 @@ p > code ::selection {
 }
 
 ul li code {
+  background: var(--color-bg-secondary);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  white-space: pre-wrap;
+  word-wrap: break-word;
   font-weight: bold;
-  color: #006fff
 }
 
 hr {

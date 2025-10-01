@@ -9,11 +9,11 @@ params:
   
 menu:
   main:
-    - name: "About"
-      url: "/about/"
+    - name: "Articles"
+      url: "/articles/"
       weight: 1
-    - name: "Posts"
-      url: "/posts/"
+    - name: "Me"
+      url: "/me/"
       weight: 2
     - name: "Tags"
       url: "/tags/"

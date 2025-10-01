@@ -143,10 +143,10 @@ To publish blog posts, articles, or static pages, Hugo gives you two options to 
 
 Creating content in Hugo is straightforward and flexible. The most common way is using the terminal:
 ```bash
-hugo new posts/my-hugo-website.md    
+hugo new articles/my-hugo-website.md    
 ```
 
-After running this command, Hugo will generate a new file inside the `content/posts/` directory with a default header called **front matter**. It’s a set of metadata that helps Hugo manage the content:
+After running this command, Hugo will generate a new file inside the `content/articles/` directory with a default header called **front matter**. It’s a set of metadata that helps Hugo manage the content:
 ```md  
 ---    
 date: '2025-09-06T12:54:19+02:00'    
@@ -187,7 +187,7 @@ baseURL: https://<WEBSITE_URL>
 menu:      
   main:      
     - name: Posts      
-      url: /posts/      
+      url: /articles/      
       weight: 1      
     - name: About      
       url: /about/      

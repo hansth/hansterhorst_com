@@ -1,18 +1,19 @@
 ---
 title: Hello
 ---
-Hello, I’m **Hans ter Horst** — a software developer with a background in **Java** and **Angular**, learning **DevOps** by creating my own **HomeLab**.
+
+Hello, I’m **Hans ter Horst** — a software developer with a background in **Java** and **Angular**, now diving into **DevOps** through hands-on learning on my own **HomeLab**.
 
 ## My Journey
 
-A few years ago, at the age of 49, I decided to learn software development, and it has become one of the most exciting and learning journeys of my life. I started working with **Java** and **Angular**, building applications and sharpening my skills as a developer.
+At the age of 49, I decided to switch careers and learn software development — a choice that turned into one of the most exciting journeys of my life. I began with **Java** and **React**, building applications and **developing my skills as a developer**.
 
-Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp), which introduced me to a whole new world of tools, DevOps principles, CI/CD, cloud technologies, and more. To put this theory into practice, I'm started to build my own **Kubernetes HomeLab**, where I can experiment with setups, test new tools, and break things to fix them, as part of my hands-on learning.
+Recently, I completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp), where I gained a solid foundation in **DevOps practices**, **automation**, **CI/CD**, and **cloud technologies**. To put this into practice, I’ve started my own **Kubernetes HomeLab**, where I can experiment with setups, test new tools, and break things to fix them.
 
 ## My Goal
 
-I created this website to document and share my **DevOps learning journey**. Writing notes and articles helps me not only organize what I’ve learned, but also give back to the community that has helped me so much along the way. If my experiences can help others who are learning or switching careers into tech, then it’s all worth it.
+I created this website to **document and share my learning journey**. Writing articles helps me reflect on what I’ve learned while, but also give back to the community that has inspired me. If my experiences can help others — whether they’re learning DevOps or switching careers — then it’s all worth it.
 
 ## Beyond Tech
 
-I’ve always been curious about technology and enjoy exploring new ideas and tools. But when I’m not coding, tinkering with my **HomeLab**, or experimenting with DevOps tools, you’ll likely find me outdoors on my **mountain bike** enjoying the trails or going on **bikepacking** adventures — clearing my head and finding inspiration and ideas in nature.
+When I’m not coding or experimenting with my HomeLab, I enjoy **listening to music** and watching **biography films about musicians**. You’ll also often find me outdoors — exploring trails on my **mountain bike** or heading out on a **bikepacking adventure**. Being in nature helps me recharge and often sparks new ideas.
