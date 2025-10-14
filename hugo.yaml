@@ -12,9 +12,13 @@ menu:
     - name: "Articles"
       url: "/articles/"
       weight: 1
+    - name: "DevOps"
+      url: "/devops/"
+      weight: 2
     - name: "Me"
       url: "/me/"
-      weight: 2
+      weight: 3
     - name: "Tags"
       url: "/tags/"
-      weight: 3
+      weight: 4
+

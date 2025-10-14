@@ -368,7 +368,7 @@ header {
   grid-template-columns: auto 1fr;
   gap: var(--gap-base);
   align-items: start;
-  padding: var(--spacing-sm) 0;
+  padding: calc(var(--spacing-sm) / 2) 0;
 }
 
 @media (max-width: var(--breakpoint-mobile)) {
