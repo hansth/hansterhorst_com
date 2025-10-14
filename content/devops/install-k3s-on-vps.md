@@ -1,6 +1,6 @@
 ---
 title: Install K3s on Ubuntu VPS
-date: 2025-09-27
+date: 2025-10-14
 tags: ["devops", "k3s", "ubuntu"]
 draft: false
 weight: 2
