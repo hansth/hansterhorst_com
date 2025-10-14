@@ -120,7 +120,7 @@ envsubst < MANIFEST_FILENAME.yaml | kubectl apply -f -
 
 This approach keeps your manifests **portable**, **environment-agnostic**, and free from **hardcoded values**.
 
-> Read more: [Environment Variables in K8s Manifests](https://hansterhorst.com/devops/k3s-environment-variables.md)
+> Read more: [Environment Variables in K8s Manifests](https://hansterhorst.com/devops/k3s-environment-variables)
 
 
 ## Create the ClusterIssuer resource
@@ -406,3 +406,7 @@ Securing my K3s cluster with **Traefik** and **cert-manager** turned out to be e
 - **Cert-manager** automates SSL issuance and renewal, removing manual overhead.
 
 Applications deployed on the cluster, such as the Nginx test app, are now securely available over HTTPS with trusted Let’s Encrypt certificates. From here, I can deploy other applications like Nexus, Jenkins, or services.
+
+## GitLab
+
+> [**K3S Setup**](https://gitlab.com/devops8614042/k3s-setup)
