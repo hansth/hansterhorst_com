@@ -2,16 +2,16 @@
 title: DevOps
 ---
 
-Welcome to my **DevOps Learning Journey**, a collection of hands-on projects inspired by the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp).
+Welcome to my **DevOps Learning Journey**, a series of hands-on projects inspired by the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp).
 
-After completing the bootcamp, I created a series of **portfolio projects** that combine my new DevOps skills with my software development background. Each project represents a practical step toward building a complete DevOps environment.
+After completing the **TWN DevOps Bootcamp**, I wanted to recap my learning by creating a series of **portfolio projects** that combine new DevOps skills with my professional experience in software development.
 
-## Tech Stack
+Here’s the technology stack I’ve been working with:
 
-- **Backend**: Java, Spring Boot, MySQL, PostgreSQL, OpenAPI, Liquibase
-- **Frontend**: Angular, React
-- **CI/CD & Tools**: Jenkins, Docker, Git
-- **HomeLab**: Kubernetes
+- **Backend:** Java, Spring Boot, MySQL, PostgreSQL, OpenAPI, Liquibase
+- **Frontend:** Angular, React
+- **CI/CD & Tools:** Jenkins, Docker, Git
+- **HomeLab:** Kubernetes
 
 ## What This Series Covers
 

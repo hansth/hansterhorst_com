@@ -652,3 +652,7 @@ Automating configuration backups ensures you can always revert safely if a confi
 Setting up an Ubuntu VPS is more than just installing an operating system, it’s about creating a secure, stable environment for your applications. By creating a non-root user, enable SSH login, using auto-updates, configure Fail2ban, and create firewall rules, I have a secure foundation for running my **K3s cluster**.
 
 This setup marks the first step in my DevOps journey, building a self-managed, production-ready environment that mirrors real-world infrastructure best practices.
+
+## GitLab
+
+> [**K3S Setup**](https://gitlab.com/devops8614042/ubuntu-vps-setup)
