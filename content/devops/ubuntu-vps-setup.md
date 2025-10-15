@@ -44,6 +44,43 @@ cat /var/log/syslog | less
 ```
 - `less`: This will show the content of log files in a pager viewer.
 
+## Set the Correct Timezone
+
+Using the correct timezone on the Ubuntu server is essential for consistent timestamps in **logs**, **metrics**, and **scheduled tasks**. This becomes especially important when running monitoring and automation tools such as **Jenkins**, **Prometheus**, or **Grafana**, where time accuracy directly affects dashboards and reports.
+
+**Check the current timezone:**
+```bash
+timedatectl
+```
+
+**List all available timezones:**
+```bash
+timedatectl list-timezones | less
+```
+
+**Setting the local timezone**:
+```bash
+sudo timedatectl set-timezone Europe/Amsterdam
+```
+
+**Verify the change:**
+```bash
+timedatectl
+```
+
+Expected output:
+```
+               Local time: Wed 2025-10-15 09:30:28 CEST
+           Universal time: Wed 2025-10-15 07:30:28 UTC
+                 RTC time: Wed 2025-10-15 07:30:28
+                Time zone: Europe/Amsterdam (CEST, +0200)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+```
+
+Now my VPS will use the correct local time and automatically stay synchronized with network time servers.
+
 ## Create a non-root user
 
 When setting up an Ubuntu VPS for the first time, it creates a **root user** account by default. The root user has unrestricted privileges, which can be dangerous—one wrong command can break the entire system. It’s best practice to create a **non-root user** for daily operations.
