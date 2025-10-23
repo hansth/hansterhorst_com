@@ -74,8 +74,7 @@ ul {
 }
 
 ol {
-  list-style-type: decimal;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 
 html {
@@ -252,7 +251,7 @@ p > code ::selection {
   color: var(--color-text-primary);
 }
 
-ul li code {
+li code {
   background: var(--color-bg-secondary);
   border: 2px solid var(--color-border);
   border-radius: var(--border-radius);
