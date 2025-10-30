@@ -29,7 +29,7 @@ All variables are defined in a local `.env` file in the root project directory.
 ```bash
 ROOT_DOMAIN=example.dev
 WWW_ROOT_DOMAIN=www.example.dev
-EMAIL=dev@mail.com
+EMAIL=dev@email.com
 NGINX=nginx
 ```
 

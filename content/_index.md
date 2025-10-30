@@ -16,4 +16,4 @@ I created this website to **document and share my learning journey**. Writing ar
 
 ## Beyond Tech
 
-When I’m not coding or experimenting with my HomeLab, I enjoy **listening to music** and watching **biography films about musicians**. You’ll also often find me outdoors — exploring trails on my **mountain bike** or heading out on a **bikepacking adventure**. Being in nature helps me recharge and often sparks new ideas.
+When I’m not coding or experimenting with my HomeLab, I enjoy **listening to music** and watching **music movies about musicians**. You’ll also often find me outdoors exploring trails on my **mountain bike** or heading out on a **bikepacking adventure**. Being in nature helps me recharge and often sparks new ideas.
