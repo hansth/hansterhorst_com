@@ -11,7 +11,7 @@ weight: 3
 Containers have revolutionized the way we develop and deploy software. They provide a robust, efficient, and streamlined way to manage applications, dependencies, and configurations into a lightweight software package that runs consistently across any system.
 
 
-> See my other article about [Virtualization](https://www.hansterhorst.com/articles/virtualization.md)
+> See my other article about [Virtualization](https://www.hansterhorst.com/articles/virtualization)
 
 # Why Containers Exist
 

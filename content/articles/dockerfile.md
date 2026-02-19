@@ -166,7 +166,7 @@ Each layer is read-only and contains only the differences from the previous laye
 
 Every instruction in the Dockerfile creates a new layer in the image. These layers are stacked using OverlayFS. This improves efficiency: if a layer hasn't changed, Docker reuses the cached version.
 
-> See my other article about [OverlayFS](https;//hansterhorst/articles/containers/#union-file-system-overlayfs)
+> See my other article about [OverlayFS](https://hansterhorst.com/articles/containers/#union-file-system-overlayfs)
 
 ### FROM - Base Image Selection
 
