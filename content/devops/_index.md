@@ -17,6 +17,6 @@ Here’s the technology stack I’ve been working with:
 
 This series documents my step-by-step journey in building a DevOps environment, from infrastructure setup through to automation, CI/CD pipelines, and container orchestration.
 
-Each article highlights hands-on implementation, showing how I built a secure, modular, and production-ready DevOps setup using modern tools and best practices.
+Each project highlights hands-on implementation, showing how I built a secure, modular, and production-ready DevOps setup using modern tools and best practices.
 
 ## Projects

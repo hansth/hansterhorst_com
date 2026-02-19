@@ -3,7 +3,9 @@ title: "My Hugo Website"
 date: 2025-09-06
 draft: false
 tags: ["Hugo", "Cloudflare"]
+weight: 1
 ---
+
 As a software developer with a background in **Java** and **Angular**, I’ve been comfortable building applications that rely on frameworks, APIs, and dynamic backends. But when I decided to create my **own personal website**, a site to share my DevOps learning journey from the **TWN DevOps Bootcamp** — I wanted something simpler, faster, and easier to maintain.
 
 My goal wasn’t to build a complex application. Instead, I needed an easy way to transform my Markdown articles into a clean, professional-looking website that I could deploy quickly. So I can focus on writing and publishing my insights and hands-on learning — without the overhead of managing servers, databases, or backend code.
@@ -325,3 +327,5 @@ In short, Hugo has given me a developer-friendly workflow, and Cloudflare has pr
 This repository contains the source code for my personal website.
 
 >**GitHub**: [repository](https://github.com/hansth/hansterhorst_com)
+
+---

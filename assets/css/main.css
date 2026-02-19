@@ -230,6 +230,7 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
   margin: 5px 0 5px 0;
+  font-size: calc(var(--font-size-small) / 1.2);
 }
 
 pre ::selection {
@@ -505,6 +506,7 @@ blockquote > :last-child {
   border: 2px solid var(--color-border);
   background: var(--color-bg-secondary);
   border-radius: var(--border-radius);
+  font-size: calc(var(--font-size-small) / 1.2);
 }
 
 .toc .toc-content a {
