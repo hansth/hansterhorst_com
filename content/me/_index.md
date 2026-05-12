@@ -21,8 +21,23 @@ At 49, I decided to switch careers and learn software development. Since then, I
 
 ## Work Experience
 
+**Software Developer transition to Kubernetes Engineer**\
+*KubeCraft – 2026 to present*
+
+Transitioning from Software Developer to Kubernetes Engineer through KubeCraft’s hands-on DevOps internship program, building production-ready infrastructure skills via practical, real-world projects.
+
+Current focus areas include:
+
+- Designing, deploying, and managing a Kubernetes HomeLab cluster.
+- Preparation for CKA certification.
+- Linux system administration and troubleshooting.
+- CI/CD pipeline implementation with Jenkins, GitHub Actions, and GitLab CI/CD.
+- Infrastructure as Code using Terraform.
+- Monitoring and observability fundamentals.
+
+
 **Software Developer**\
-*Twict – 2022 to Present*
+*Twict – 2022 to 2026*
 
 * Implemented **i18n translation** functionality, improving accessibility for international users.
 * Built a cost-effective **video streaming solution** for an educational platform using Raspberry Pi's.
@@ -36,7 +51,7 @@ At 49, I decided to switch careers and learn software development. Since then, I
 * Monitored and optimized processes, focusing on quality control and operational reliability.
 * Gained strong experience in teamwork, problem-solving, and working under pressure.
 
-**Matchmove Artist**\  
+**Matchmove Artist**\
 *Escape Studios, London – 2007*
 
 * Worked on Walt Disney’s **The Chronicles of Narnia: Prince Caspian**.
@@ -53,11 +68,16 @@ At 49, I decided to switch careers and learn software development. Since then, I
 ---
 
 ## Certificates
-
-**[AWS Certified Cloud Practitioner](https://www.credly.com/badges/3e1d3967-0f7e-4a08-be25-f791fc13ab80)**\  
+**[CKAD: Certified Kubernetes Application Developer](https://www.credly.com/badges/dc72b82d-f473-491a-aba3-f879caa2485b)**\
 *2026*
 
-**[Certified DevOps Practitioner](https://www.credly.com/badges/caa2887e-d3e3-40bc-8084-fba7920fa4f8)**\  
+**[KCNA: Kubernetes and Cloud Native Associate](https://www.credly.com/badges/90ed0629-333a-4e39-983f-4e8c095e1d7d)**\
+*2026*
+
+**[AWS Certified Cloud Practitioner](https://www.credly.com/badges/3e1d3967-0f7e-4a08-be25-f791fc13ab80)**\
+*2026*
+
+**[Certified DevOps Practitioner](https://www.credly.com/badges/caa2887e-d3e3-40bc-8084-fba7920fa4f8)**\
 *2025*
   
 ---  

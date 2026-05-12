@@ -183,7 +183,7 @@ Create `compose.yaml`:
 services:
   backend:
     build:
-      context: .
+      context: ..
       dockerfile: Dockerfile
     volumes:
       - html:/html

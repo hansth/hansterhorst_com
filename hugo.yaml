@@ -15,6 +15,9 @@ menu:
     - name: "DevOps"
       url: "/devops/"
       weight: 2
+#    - name: "Notes"
+#      url: "/notes/"
+#      weight: 4
     - name: "Me"
       url: "/me/"
       weight: 3
