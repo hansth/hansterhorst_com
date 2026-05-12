@@ -11,7 +11,7 @@ weight: 1
 
 Kubernetes is deployed as a **cluster**, a set of servers that share workloads, improve reliability, and scale applications efficiently.
 
-Kubernetes's **horizontal scalability** enables it to support clusters comprising thousands of nodes, distributed across multiple data centers and even regions.
+Kubernetes's **horizontal scalability** enables it to support clusters of thousands of nodes across a single data center or multiple regions.
 
 ---
 
@@ -29,7 +29,9 @@ The control plane is a set of components responsible for container orchestration
 
 The Worker node executes workloads in containers managed by Pods. They are managed by the control plane and include all the services needed to run containers.
 
-Every Kubernetes node runs three core components: the `kubelet`, a container runtime such as `containerd` or CRI-O, and `kube-proxy` — though `kube-proxy` is optional when a CNI plugin handles Service routing instead.
+Every Kubernetes node runs three core components: the `kubelet`, a container runtime such as `containerd` or CRI-O, and `kube-proxy`.
+
+> **_Note_**: `kube-proxy` is optional if a CNI plugin handles Service routing.
 
 ---
 
@@ -81,20 +83,20 @@ The `kubelet` uses the **CRI** to instruct the container runtime to pull images,
 
 ### gRPC
 
-**gRPC** (Google Remote Procedure Call) is the communication protocol used between the `kubelet` and the container runtime over the CRI. It uses **Protocol Buffers** for efficient serialization and handles operations such as creating, starting, and stopping containers.
+**gRPC** (Google Remote Procedure Call) is the communication protocol used by the `kubelet` to communicate with the container runtime over the CRI. It uses **Protocol Buffers** for efficient serialization and handles operations such as creating, starting, and stopping containers.
 
 ---
 
 ## kubelet
 
-Kubernetes relies on the `kubelet` to run its core components. For this reason, the `kubelet` runs on both the Control Plane and the Worker Nodes, where it manages the lifecycle of the containers running on each node.
+The kubelet is the primary node agent in Kubernetes. It runs on both the Control Plane and the Worker Nodes, where it manages the lifecycle of Pods on each node.
 
 Unlike most Kubernetes components, the `kubelet` does **not** run inside a container. It is installed directly on the host operating system as a **Linux system daemon managed by `systemd`**. It communicates with the container runtime over gRPC via the CRI.
 
 The `kubelet` consumes **Pod specifications** written in YAML manifests and ensures the described Pods are running and healthy. It watches for Pod manifests from several sources:
 
 - **The `kube-apiserver`**: Pod assignments for standard, scheduler-managed Pods
-- **`/etc/kubernetes/manifests`**: A local directory the `kubelet` watches for static Pod definitions
+- **`/etc/kubernetes/manifests`**: A local directory that the `kubelet` watches for static Pod definitions
 
 This directory on a **kubeadm-bootstrapped** Control Plane node contains the manifests for the core control plane components:
 
@@ -110,14 +112,14 @@ drwxrwxr-x 7 root root 4096 May  1 13:26 ..
 
 These static Pod manifests are managed directly by the **kubelet** and completely bypass the `kube-scheduler` and `kube-controller-manager`.
 
-When the `kubelet` finds a manifest in this directory, it processes it and forwards creation requests down the container runtime stack: `kubelet → containerd → runc`.
+When the `kubelet` detects a manifest in this directory, it processes it and forwards creation requests down the container runtime stack: `kubelet → containerd → runc`.
 
 Key responsibilities of the `kubelet`:
 
 - **Process PodSpecs**: Receives and processes PodSpecs from the `kube-apiserver`.
 - **Mount Volumes**: Mounts persistent and ephemeral storage volumes to Pods as specified.
 - **Manage Secrets and ConfigMaps**: Retrieves and injects configuration data and secrets into the Pod environment.
-- **Communicates with the Container Runtime**: Sends instructions to the container runtime to manage containers.
+- **Communicate with the Container Runtime**: Sends instructions to the container runtime to manage containers.
 - **Report Node and Pod Status**: Continuously monitors Pod and node health and reports status updates to the `kube-apiserver`.
 
 ---
@@ -172,7 +174,7 @@ It exposes a RESTful API and is responsible for:
 - Persisting the desired state to `etcd`.
 - Returning responses to callers.
 
-The API server is the **only** component that communicates with `etcd` directly.
+The API server is the **only** component that communicates directly with `etcd`.
 
 ### kube-scheduler — Workload Placement
 
@@ -209,7 +211,7 @@ Node components run on every node in the cluster and provide the Kubernetes runt
 
 ### kube-proxy — Network Rules (Optional)
 
-**`kube-proxy`** is a network proxy that runs on every Node as a **DaemonSet**. It watches the API server for Service and Endpoint changes and programs the node's networking rules — using `iptables` or `ipvs` — to implement Service routing.
+**`kube-proxy`** is a network proxy that runs on every Node as a **DaemonSet**. It watches the API server for changes to Services and Endpoints and programs the node's networking rules, using `iptables` or `ipvs` to implement Service routing.
 
 It enables:
 
@@ -220,9 +222,9 @@ It enables:
 
 ### CoreDNS — Service Discovery
 
-**CoreDNS** is a DNS server that enables Pods to discover each other by name rather than IP address. For example, a Pod can reach the `nginx` Service in the `default` namespace using the DNS name `nginx.default.svc.cluster.local`.
+CoreDNS is a DNS server that enables service discovery within the cluster. Pods resolve Services by DNS name rather than IP address. For example, the nginx Service in the default namespace is reachable at `nginx.default.svc.cluster.local`.
 
-Unlike the static Pod control plane components, CoreDNS runs as a **Deployment** with multiple replicas for availability. It is exposed inside the cluster via a **ClusterIP Service** called `kube-dns` in the `kube-system` namespace. The `kubelet`configures this Service's IP as the DNS resolver in every Pod's `/etc/resolv.conf`, so all Pods automatically use CoreDNS for name resolution.
+Unlike the static Pod control plane components, CoreDNS runs as a **Deployment** with multiple replicas for availability. It is exposed inside the cluster via a **ClusterIP Service** called `kube-dns` in the `kube-system` namespace. The `kubelet` configures this Service's IP as the DNS resolver in every Pod's `/etc/resolv.conf`, so all Pods automatically use CoreDNS for name resolution.
 
 ### Cloud Controller Manager (Optional)
 
@@ -242,7 +244,7 @@ In a production Kubernetes cluster, you typically run multiple Control-Plane Nod
 
 In an HA cluster, you need at least **three Control Plane Nodes**, always an odd number (3, 5, or 7), so that `etcd` can maintain quorum. The `etcd` instances use the **Raft consensus algorithm** to ensure all members agree on the cluster state, even if a member becomes unavailable.
 
-For the `kube-apiserver`, a **load balancer** sits in front of all API server endpoints. Both users and Worker Nodes connect to this stable IP address rather than to individual Control Plane nodes. Because all state is stored in `etcd` and Raft guarantees consistency, any API server instance can handle any request.
+A load balancer sits in front of the kube-apiserver endpoints, giving users and Worker Nodes a single stable IP address to reach the control plane. Because all state lives in etcd and Raft guarantees consistency, it does not matter which API server instance handles a request.
 
 ---
 
@@ -348,7 +350,7 @@ Understanding this end-to-end flow, from `kubectl apply` to a running container,
 
 **kube-controller-manager**: Runs multiple control loop controllers that continuously reconcile actual cluster state with desired state stored in `etcd`. Includes Deployment, ReplicaSet, Node, and Endpoint controllers.
 
-**kube-proxy**: A network proxy running as a DaemonSet on every node. Programs networking rules using `iptables` or `ipvs`to implement Service routing. Optional when replaced by a CNI plugin such as Cilium.
+**kube-proxy**: A network proxy running as a DaemonSet on every node. Programs networking rules using `iptables` or `ipvs` to implement Service routing. Optional when replaced by a CNI plugin such as Cilium.
 
 **CoreDNS**: A DNS server running as a Deployment that provides service discovery. Exposed via the `kube-dns` ClusterIP Service in `kube-system`. Enables Pods to resolve Services by DNS name rather than IP address.
 
