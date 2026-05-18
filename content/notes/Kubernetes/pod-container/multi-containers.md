@@ -1,6 +1,8 @@
 ---
 title: Multi-Container Pods
 date: 2026-03-16
+weight: 2
+tags: [Pods, Containers]
 ---
 # Multi-Container Pods
 

@@ -1,8 +1,8 @@
 ---
 title: Pods
 date: 2026-03-17
-tags:
-  - Pod
+weight: 1
+tags: [Pods]
 ---
 # Pods
 
