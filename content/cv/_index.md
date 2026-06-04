@@ -1,10 +1,10 @@
 ---
-title: About Me
+title: CV 
 Date: 2025-10-01
 Draft: false
 ---
 
-Hello, I’m **Hans ter Horst**, a Software Developer with a background in **Java** and **Angular**, currently transitioning into **DevOps** by building my own **Kubernetes HomeLab**.
+Hello, I’m **Hans ter Horst**, a Full-Stack Developer with a background in **Java** and **Angular**, currently transitioning into **Kubernetes** by building my own **Kubernetes HomeLab**.
 
 At 49, I decided to switch careers and learn software development. Since then, I’ve built applications, completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp), and started hands-on projects that combine my passion for coding, DevOps, and continuous learning.
 
@@ -21,10 +21,10 @@ At 49, I decided to switch careers and learn software development. Since then, I
 
 ## Work Experience
 
-**Software Developer transition to Kubernetes Engineer**\
+### Kubernetes Engineer Internship
 *KubeCraft – 2026 to present*
 
-Transitioning from Software Developer to Kubernetes Engineer through KubeCraft’s hands-on DevOps internship program, building production-ready infrastructure skills via practical, real-world projects.
+Transitioning from Full-Stack Developer to Kubernetes Engineer through KubeCraft’s hands-on DevOps internship program, building production-ready infrastructure skills via practical, real-world projects.
 
 Current focus areas include:
 
@@ -36,7 +36,7 @@ Current focus areas include:
 - Monitoring and observability fundamentals.
 
 
-**Software Developer**\
+### Full-Stack Developer
 *Twict – 2022 to 2026*
 
 * Implemented **i18n translation** functionality, improving accessibility for international users.
@@ -44,21 +44,21 @@ Current focus areas include:
 * Developed a **reusable phone validation Angular component** for international number support.
 * Contributed to overall **code quality improvements** through refactoring and optimization.
 
-**Process Operator**\
+### Process Operator
 *Various Companies – 2011 to 2020*
 
 * Worked 5 years as a process operator, ensuring efficient and safe production workflows.
 * Monitored and optimized processes, focusing on quality control and operational reliability.
 * Gained strong experience in teamwork, problem-solving, and working under pressure.
 
-**Matchmove Artist**\
+### Matchmove Artist
 *Escape Studios, London – 2007*
 
 * Worked on Walt Disney’s **The Chronicles of Narnia: Prince Caspian**.
 * Responsible for **tracking movie shots** to ensure accurate VFX integration into live-action footage.
 * Collaborated with the VFX team to maintain consistency and realism across sequences.
 
-**Graphic Industry Professional**\
+### Graphic Industry Professional
 *Various Companies – 1990 to 2011*
 
 * Over 20 years of experience in the **graphic industry**, across multiple roles.
@@ -68,48 +68,47 @@ Current focus areas include:
 ---
 
 ## Certificates
-**[CKAD: Certified Kubernetes Application Developer](https://www.credly.com/badges/dc72b82d-f473-491a-aba3-f879caa2485b)**\
-*2026*
 
-**[KCNA: Kubernetes and Cloud Native Associate](https://www.credly.com/badges/90ed0629-333a-4e39-983f-4e8c095e1d7d)**\
-*2026*
+### [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/42b48583-e987-4d04-830c-37731b747bbb)
 
-**[AWS Certified Cloud Practitioner](https://www.credly.com/badges/3e1d3967-0f7e-4a08-be25-f791fc13ab80)**\
-*2026*
+### [CKAD: Certified Kubernetes Application Developer](https://www.credly.com/badges/dc72b82d-f473-491a-aba3-f879caa2485b)
 
-**[Certified DevOps Practitioner](https://www.credly.com/badges/caa2887e-d3e3-40bc-8084-fba7920fa4f8)**\
-*2025*
-  
+### [KCNA: Kubernetes and Cloud Native Associate](https://www.credly.com/badges/90ed0629-333a-4e39-983f-4e8c095e1d7d)
+
+### [AWS Certified Cloud Practitioner](https://www.credly.com/badges/3e1d3967-0f7e-4a08-be25-f791fc13ab80)
+
+### [Certified DevOps Practitioner](https://www.credly.com/badges/caa2887e-d3e3-40bc-8084-fba7920fa4f8)
+
 ---  
 
 ## Education
 
-**TWN DevOps Bootcamp**\
-*Online, 2025*
-
-* Intensive program covering automation, CI/CD, cloud platforms, Kubernetes, and modern DevOps workflows.
-
-**Kubernetes HomeLab**\
+### Kubernetes HomeLab
 *Self-Learning, 2025 – Ongoing*
 
 * Hands-on experimentation with Kubernetes clusters, cloud-native tooling, and automation.
 
-**Full Stack Developer**\
+### TWN DevOps Bootcamp
+*Online, 2025*
+
+* Intensive program covering automation, CI/CD, cloud platforms, Kubernetes, and modern DevOps workflows.
+
+### Full Stack Developer
 *Hogeschool Novi, 2021 – 2022*
 
 * HBO bootcamp in full-stack web development, focusing on Java and React.
 
-**Vapro B – Process Operator**\
+### Vapro B – Process Operator
 *ROC Twente, 2012 – 2015*
 
 * Professional vocational degree in process technology and operations.
 
-**Maya Professional for VFX**\
+### Maya Professional for VFX
 *Escape Studios, London, 2007*
 
 * Professional training in 3D modeling, animation, and visual effects.
 
-**MBO – Graphic Technician**\
+### MBO – Graphic Technician
 *Grafisch Lyceum, 1990 – 1995*
 
 * Vocational degree in graphic technology, focusing on print processes and production workflows.
