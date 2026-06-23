@@ -4,9 +4,9 @@ Date: 2025-10-01
 Draft: false
 ---
 
-Hello, I’m **Hans ter Horst**, a Full-Stack Developer with a background in **Java** and **Angular**, currently transitioning into **Kubernetes** by building my own **Kubernetes HomeLab**.
+Full-Stack Developer with a background in Java and Angular, now transitioning to Kubernetes engineering. At the end of 2024, I started the TWN DevOps Bootcamp and didn't stop after that: from the first k3s CI / CD cluster with Jenkins, Nexus, and Podman to a production-ready HA setup with three control planes, Cilium, Longhorn, and etcd encrypted at rest.
 
-At 49, I decided to switch careers and learn software development. Since then, I’ve built applications, completed the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp), and started hands-on projects that combine my passion for coding, DevOps, and continuous learning.
+Along the way, I earned the KCNA, CKAD, and CKA. With a development background, I understand how applications work from the inside, which translates into better choices around manifests, resource limits, and deployment strategies.
 
 ---
 
@@ -29,7 +29,6 @@ Transitioning from Full-Stack Developer to Kubernetes Engineer through KubeCraft
 Current focus areas include:
 
 - Designing, deploying, and managing a Kubernetes HomeLab cluster.
-- Preparation for CKA certification.
 - Linux system administration and troubleshooting.
 - CI/CD pipeline implementation with Jenkins, GitHub Actions, and GitLab CI/CD.
 - Infrastructure as Code using Terraform.
