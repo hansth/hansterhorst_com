@@ -1,10 +1,10 @@
 ---
-title: CV 
+title: CV Hans ter Horst
 Date: 2025-10-01
 Draft: false
 ---
 
-Full-Stack Developer with a background in Java and Angular, now transitioning to Kubernetes engineering. At the end of 2024, I started the TWN DevOps Bootcamp and didn't stop after that: from the first k3s CI / CD cluster with Jenkins, Nexus, and Podman to a production-ready HA setup with three control planes, Cilium, Longhorn, and etcd encrypted at rest.
+Full-Stack Developer with a background in Java and Angular, now transitioning to Kubernetes engineering. At the end of 2024, I started the TWN DevOps Bootcamp and didn't stop after that: from the first k3s CI/CD cluster with Jenkins, Nexus, and Podman to a production-ready HA setup with three control planes, Cilium, Longhorn, and etcd encrypted at rest.
 
 Along the way, I earned the KCNA, CKAD, and CKA. With a development background, I understand how applications work from the inside, which translates into better choices around manifests, resource limits, and deployment strategies.
 
@@ -68,15 +68,15 @@ Current focus areas include:
 
 ## Certificates
 
-### [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/42b48583-e987-4d04-830c-37731b747bbb)
+[**CKA: Certified Kubernetes Administrator**](https://www.credly.com/badges/42b48583-e987-4d04-830c-37731b747bbb)
 
-### [CKAD: Certified Kubernetes Application Developer](https://www.credly.com/badges/dc72b82d-f473-491a-aba3-f879caa2485b)
+[**CKAD: Certified Kubernetes Application Developer**](https://www.credly.com/badges/dc72b82d-f473-491a-aba3-f879caa2485b)
 
-### [KCNA: Kubernetes and Cloud Native Associate](https://www.credly.com/badges/90ed0629-333a-4e39-983f-4e8c095e1d7d)
+[**KCNA: Kubernetes and Cloud Native Associate**](https://www.credly.com/badges/90ed0629-333a-4e39-983f-4e8c095e1d7d)
 
-### [AWS Certified Cloud Practitioner](https://www.credly.com/badges/3e1d3967-0f7e-4a08-be25-f791fc13ab80)
+[**AWS Certified Cloud Practitioner**](https://www.credly.com/badges/3e1d3967-0f7e-4a08-be25-f791fc13ab80)
 
-### [Certified DevOps Practitioner](https://www.credly.com/badges/caa2887e-d3e3-40bc-8084-fba7920fa4f8)
+[**Certified DevOps Practitioner**](https://www.credly.com/badges/caa2887e-d3e3-40bc-8084-fba7920fa4f8)
 
 ---  
 
