@@ -32,14 +32,6 @@ My development background gives me a solid understanding of how applications wor
 
 ## Projects
 
-**Jenkins CI/CD Pipeline** [gitlab.com/devops8614042](https://gitlab.com/devops8614042)
-
-- **Jenkins:** CI/CD pipelines with version control and automatic commits to Git
-- **Podman:** For building container images from Jenkins without a Docker daemon
-- **Sonatype Nexus:** My private registry for central storage and distribution of container images
-- **Traefik IngressRoute:** HTTPS routing to internal services on the cluster
-- **cert-manager:** For automatic TLS certificates via Let's Encrypt and Cloudflare DNS validation
-
 **Rancher ArgoCD Pipeline** [gitlab.com/HansTH/rancher-argocd](https://gitlab.com/HansTH/rancher-argocd)
 
 - **Rancher:** For multi-cluster management, simplifying cluster administration and upgrades
@@ -60,6 +52,14 @@ My development background gives me a solid understanding of how applications wor
 - **Renovate:** CronJob for automated container image updates via Git
 - **Prometheus + Grafana:** For monitoring and observability of cluster and workloads
 - **HAProxy + UniFi:** For API server load balancing and network VLAN segmentation
+
+**Jenkins CI/CD Pipeline** [gitlab.com/devops8614042](https://gitlab.com/devops8614042)
+
+- **Jenkins:** CI/CD pipelines with version control and automatic commits to Git
+- **Podman:** For building container images from Jenkins without a Docker daemon
+- **Sonatype Nexus:** My private registry for central storage and distribution of container images
+- **Traefik IngressRoute:** HTTPS routing to internal services on the cluster
+- **cert-manager:** For automatic TLS certificates via Let's Encrypt and Cloudflare DNS validation
 
 ---
 
