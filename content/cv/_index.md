@@ -4,9 +4,9 @@ Date: 2025-10-01
 Draft: false
 ---
 
-Full-Stack Developer with a background in Java and Angular, now transitioning to Kubernetes engineering. At the end of 2024, I started the TWN DevOps Bootcamp and didn't stop after that: from the first k3s CI/CD cluster with Jenkins, Nexus, and Podman to a production-ready HA setup with three control planes, Cilium, Longhorn, and etcd encrypted at rest.
+Four years as a Full-Stack developer with experience in Java and Angular, currently transitioning into Kubernetes engineering. I started in 2025 with a K3s cluster and subsequently built my own Homelab cluster with three control planes and one worker node. In doing so, I earned the KCNA, CKAD, and CKA, with the goal of becoming a Kubestronaut this year. 
 
-Along the way, I earned the KCNA, CKAD, and CKA. With a development background, I understand how applications work from the inside, which translates into better choices around manifests, resource limits, and deployment strategies.
+My development background gives me a solid understanding of how applications work from the inside and what it means to be a developer. This makes me a better engineer and helps me find the best solutions for deploying applications on Kubernetes.
 
 ---
 
@@ -19,116 +19,94 @@ Along the way, I earned the KCNA, CKAD, and CKA. With a development background, 
 
 ---
 
-## Work Experience
+## Certifications
 
-### Kubernetes Engineer Internship
-*KubeCraft – 2026 to present*
-
-Transitioning from Full-Stack Developer to Kubernetes Engineer through KubeCraft’s hands-on DevOps internship program, building production-ready infrastructure skills via practical, real-world projects.
-
-Current focus areas include:
-
-- Designing, deploying, and managing a Kubernetes HomeLab cluster.
-- Linux system administration and troubleshooting.
-- CI/CD pipeline implementation with Jenkins, GitHub Actions, and GitLab CI/CD.
-- Infrastructure as Code using Terraform.
-- Monitoring and observability fundamentals.
-
-
-### Full-Stack Developer
-*Twict – 2022 to 2026*
-
-* Implemented **i18n translation** functionality, improving accessibility for international users.
-* Built a cost-effective **video streaming solution** for an educational platform using Raspberry Pi's.
-* Developed a **reusable phone validation Angular component** for international number support.
-* Contributed to overall **code quality improvements** through refactoring and optimization.
-
-### Process Operator
-*Various Companies – 2011 to 2020*
-
-* Worked 5 years as a process operator, ensuring efficient and safe production workflows.
-* Monitored and optimized processes, focusing on quality control and operational reliability.
-* Gained strong experience in teamwork, problem-solving, and working under pressure.
-
-### Matchmove Artist
-*Escape Studios, London – 2007*
-
-* Worked on Walt Disney’s **The Chronicles of Narnia: Prince Caspian**.
-* Responsible for **tracking movie shots** to ensure accurate VFX integration into live-action footage.
-* Collaborated with the VFX team to maintain consistency and realism across sequences.
-
-### Graphic Industry Professional
-*Various Companies – 1990 to 2011*
-
-* Over 20 years of experience in the **graphic industry**, across multiple roles.
-* Specialized in **print production processes**, layout, and prepress operations.
-* Built long-term expertise in precision, creativity, and meeting strict deadlines.
+- [CKA](https://www.credly.com/badges/42b48583-e987-4d04-830c-37731b747bbb) — Certified Kubernetes Administrator
+- [CKAD](https://www.credly.com/badges/dc72b82d-f473-491a-aba3-f879caa2485b) — Certified Kubernetes Application Developer
+- [KCNA](https://www.credly.com/badges/1d2b6127-d8d5-4b19-9839-b263337bc744) — Kubernetes and Cloud Native Associate
+- [DevOps Practitioner](https://www.credly.com/badges/caa2887e-d3e3-40bc-8084-fba7920fa4f8) — TWN DevOps Bootcamp
+- [AWS CCP](https://www.credly.com/badges/3e1d3967-0f7e-4a08-be25-f791fc13ab80) — AWS Certified Cloud Practitioner
+- KCSA + KCNS — planned end of 2026 _(Kubestronaut)_
 
 ---
 
-## Certificates
+## Projects
 
-[**CKA: Certified Kubernetes Administrator**](https://www.credly.com/badges/42b48583-e987-4d04-830c-37731b747bbb)
+**Jenkins CI/CD Pipeline** [gitlab.com/devops8614042](https://gitlab.com/devops8614042)
 
-[**CKAD: Certified Kubernetes Application Developer**](https://www.credly.com/badges/dc72b82d-f473-491a-aba3-f879caa2485b)
+- **Jenkins:** CI/CD pipelines with version control and automatic commits to Git
+- **Podman:** For building container images from Jenkins without a Docker daemon
+- **Sonatype Nexus:** My private registry for central storage and distribution of container images
+- **Traefik IngressRoute:** HTTPS routing to internal services on the cluster
+- **cert-manager:** For automatic TLS certificates via Let's Encrypt and Cloudflare DNS validation
 
-[**KCNA: Kubernetes and Cloud Native Associate**](https://www.credly.com/badges/90ed0629-333a-4e39-983f-4e8c095e1d7d)
+**Rancher ArgoCD Pipeline** [gitlab.com/HansTH/rancher-argocd](https://gitlab.com/HansTH/rancher-argocd)
 
-[**AWS Certified Cloud Practitioner**](https://www.credly.com/badges/3e1d3967-0f7e-4a08-be25-f791fc13ab80)
+- **Rancher:** For multi-cluster management, simplifying cluster administration and upgrades
+- **ArgoCD:** GitOps deployments without manual intervention
+- **Kustomize:** For environment-specific adjustments to Kubernetes manifests
+- **KSOPS:** Kustomize plugin for SOPS/age secret encryption in ArgoCD
+- **Traefik IngressRoute:** HTTPS routing to internal services on the cluster
+- **cert-manager:** For automatic TLS certificates via Let's Encrypt and Cloudflare DNS validation
 
-[**Certified DevOps Practitioner**](https://www.credly.com/badges/caa2887e-d3e3-40bc-8084-fba7920fa4f8)
+**Kubernetes HomeLab** [gitlab.com/homelab7894101/k8s-homelab](https://gitlab.com/homelab7894101/k8s-homelab)
 
----  
+- **kubeadm:** For setting up an HA cluster with three control planes and one worker node
+- **Cilium CNI:** As a kube-proxy replacement, including Cilium Gateway API
+- **Longhorn:** For distributed block storage with replication across multiple nodes
+- **Flux:** GitOps deployments without manual intervention
+- **Kustomize:** For environment-specific adjustments to Kubernetes manifests
+- **SOPS + age:** For managing encrypted secrets in GitOps workflows
+- **Renovate:** CronJob for automated container image updates via Git
+- **Prometheus + Grafana:** For monitoring and observability of cluster and workloads
+- **HAProxy + UniFi:** For API server load balancing and network VLAN segmentation
+
+---
+
+## Work Experience
+
+**Full-Stack Developer — Twict** | _2022 – 2026_
+
+- Implemented i18n translation functionality for international users
+- Built a cost-effective video streaming solution for an educational platform
+- Developed a reusable Angular component for international phone number validation
+- Contributed to code quality improvements through refactoring and optimization
+
+**Process Operator — Various companies** | _2011 – 2020_
+
+- Monitored and optimized processes with a focus on quality control and operational reliability
+- Strong experience in teamwork, problem-solving and working under pressure
+
+**Matchmove Artist — Escape Studios, London** | _2007_
+
+- Worked on Walt Disney's The Chronicles of Narnia: Prince Caspian
+- Responsible for tracking footage for accurate VFX integration
+
+**Graphic Industry — Various companies** | _1990 – 2011_
+
+- Over 20 years in various roles, specializing in print production, layout, and prepress
+
+---
 
 ## Education
 
-### Kubernetes HomeLab
-*Self-Learning, 2025 – Ongoing*
+**TWN DevOps Bootcamp** | **Online** | _2025_ Automation, CI/CD, cloud platforms, Kubernetes, and modern DevOps workflows.
 
-* Hands-on experimentation with Kubernetes clusters, cloud-native tooling, and automation.
+**Full Stack Developer — Hogeschool Novi** | _2021 – 2022_ Higher education bootcamp in full-stack web development, Java, and React.
 
-### TWN DevOps Bootcamp
-*Online, 2025*
+**Vapro B – Process Operator — ROC Twente** | _2012 – 2015_ Vocational training in process technology and operations.
 
-* Intensive program covering automation, CI/CD, cloud platforms, Kubernetes, and modern DevOps workflows.
-
-### Full Stack Developer
-*Hogeschool Novi, 2021 – 2022*
-
-* HBO bootcamp in full-stack web development, focusing on Java and React.
-
-### Vapro B – Process Operator
-*ROC Twente, 2012 – 2015*
-
-* Professional vocational degree in process technology and operations.
-
-### Maya Professional for VFX
-*Escape Studios, London, 2007*
-
-* Professional training in 3D modeling, animation, and visual effects.
-
-### MBO – Graphic Technician
-*Grafisch Lyceum, 1990 – 1995*
-
-* Vocational degree in graphic technology, focusing on print processes and production workflows.
+**Maya Professional for VFX — Escape Studios, London** | _2007_ Training in 3D modeling, animation, and visual effects.
 
 ---
 
 ## Technical Skills
 
-* **Languages & Frameworks**: Java, Spring Boot, Angular, React, TypeScript, JavaScript
-* **DevOps & Cloud**: Docker, Kubernetes, CI/CD pipelines, GitOps, Jenkins
-* **Infrastructure & Tools**: Linux, Helm, Terraform, Ansible
-* **Other Interests**: BikePacking, Sport, Movies, Continuous Learning
-
----
-
-## Goals
-
-I created this website to document and share my **DevOps learning journey**. Writing notes and articles helps me organize what I’ve learned while giving back to the community that has inspired me.
-
-My goal is to continue growing as a **DevOps engineer** while inspiring and supporting others — especially those learning DevOps or switching careers into tech.
-
+- **Kubernetes & cloud-native:** Kubernetes, K3s, Rancher, Flux, ArgoCD, Helm, Kustomize, Prometheus, Grafana
+- **DevOps & CI/CD:** Jenkins, Docker, Podman, Renovate 
+- **Registries & Artifacts:** Sonatype Nexus 
+- **Development:** Java, Spring Boot, Angular, React, TypeScript, JavaScript 
+- **Infrastructure:** Linux, HAProxy, UniFi
 ---
 
 ## Beyond Tech
