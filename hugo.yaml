@@ -12,8 +12,8 @@ menu:
     - name: "Articles"
       url: "/articles/"
       weight: 1
-    - name: "DevOps"
-      url: "/devops/"
+    - name: "Projects"
+      url: "/projects/"
       weight: 2
 #    - name: "Notes"
 #      url: "/notes/"
