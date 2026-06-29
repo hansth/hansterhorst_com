@@ -1,5 +1,5 @@
 ---
-title: GitLab
+title: Projects
 ---
 
 A collection of hands-on Kubernetes projects: CI/CD pipelines, GitOps deployments, and my Homelab. I share what I build, the problems I run into, and what I learn along the way.
