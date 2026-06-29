@@ -6,7 +6,7 @@ theme: shibui
 params:
   author: Hans ter Horst
   email: hbhorst@mac.com
-  
+
 menu:
   main:
     - name: "Articles"
@@ -15,13 +15,9 @@ menu:
     - name: "Projects"
       url: "/projects/"
       weight: 2
-#    - name: "Notes"
-#      url: "/notes/"
-#      weight: 4
     - name: "CV"
       url: "/cv/"
       weight: 3
     - name: "Tags"
       url: "/tags/"
       weight: 4
-
