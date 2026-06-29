@@ -12,8 +12,8 @@ menu:
     - name: "Articles"
       url: "/articles/"
       weight: 1
-    - name: "Projects"
-      url: "/projects/"
+    - name: "GitLab"
+      url: "/gitlab/"
       weight: 2
     - name: "CV"
       url: "/cv/"
