@@ -4,7 +4,7 @@ Date: 2025-10-01
 Draft: false
 ---
 
-Four years as a Full-Stack developer with experience in Java and Angular, currently transitioning into Kubernetes engineering. I started in 2025 with a K3s cluster and subsequently built my own Homelab cluster with three control planes and one worker node. In doing so, I earned the KCNA, CKAD, and CKA, with the goal of becoming a Kubestronaut this year. 
+Four years as a Full-Stack developer with experience in Java and Angular, currently transitioning into Kubernetes engineering. I started in 2025 with a K3S cluster, and later built my own Homelab cluster with three control planes and one worker node. In doing so, I earned the KCNA, CKAD, and CKA, with the goal of becoming a Kubestronaut this year.
 
 My development background gives me a solid understanding of how applications work from the inside and what it means to be a developer. This makes me a better engineer and helps me find the best solutions for deploying applications on Kubernetes.
 

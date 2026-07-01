@@ -37,10 +37,10 @@ My Homelab projects to learn Kubernetes concepts through practical, hands-on tas
 
 ## [Jenkins CI/CD Pipeline](https://gitlab.com/devops8614042)
 
-This project groups several related projects focused on building tools, with the main project of setting up a K3s cluster with a fully automated CI/CD pipeline using Jenkins, Podman, and Sonatype Nexus.
+This project groups several related projects focused on building tools, with the main project being the setup of a K3s cluster with a fully automated CI/CD pipeline using Jenkins, Podman, and Sonatype Nexus.
 
-- **Jenkins:** CI/CD pipelines with version control and automatic commits to Git
-- **Podman:** For building container images from Jenkins without a Docker daemon
-- **Sonatype Nexus:** My private registry for central storage and distribution of container images
-- **Traefik IngressRoute:** HTTPS routing to internal services on the cluster
-- **cert-manager:** For automatic TLS certificates via Let's Encrypt and Cloudflare DNS validation
+- **Jenkins:** CI/CD pipelines with version control and automated Git commits
+- **Podman:** For building container images in Jenkins without Docker daemon
+- **Sonatype Nexus:** My private registry for storing and sharing container images
+- **Traefik IngressRoute:** HTTPS routing to internal cluster services
+- **cert-manager:** For automatic TLS certificates using Let's Encrypt and DNS validation
