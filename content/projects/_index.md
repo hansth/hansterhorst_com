@@ -6,6 +6,20 @@ A collection of hands-on Kubernetes projects: CI/CD pipelines, GitOps deployment
 
 ---
 
+## [Multi-Tenant AKS Platform](https://gitlab.com/HansTH/k8s-azure)
+
+This project is a multi-tenant SaaS platform on Azure AKS, provisioned with Terraform and deployed via a FluxCD GitOps pipeline. Each customer gets their own n8n instance. Terraform provisions the AKS cluster, Azure Key Vault, and Blob Storage, then bootstraps FluxCD. Flux then continuously reconciles what's declared in Git, with six Kustomizations applied in dependency order and polling every 5 minutes.
+
+- **Terraform:** Provisions the AKS cluster, Key Vault, and Blob Storage, and generates each customer's GitOps manifests
+- **FluxCD:** GitOps deployments without manual intervention, six-stage dependency-ordered sync
+- **Kustomize:** For per-customer overlays on a shared base manifest set
+- **Azure Key Vault:** Centralized secrets, synced into the cluster via the Secrets Store CSI driver
+- **CloudNativePG:** Manages PostgreSQL per customer; Barman Cloud plugin backup to Blob Storage
+- **Traefik:** Ingress controller routing external traffic into the cluster
+- **cert-manager:** For automatic TLS certificates via Let's Encrypt
+
+---
+
 ## [Rancher ArgoCD Pipeline](https://gitlab.com/HansTH/rancher-argocd)
 
 In this project, [Rancher](https://www.rancher.com/) provides a centralized control plane for managing multiple Kubernetes clusters. It enables registering, monitoring health, and upgrading clusters without requiring SSH access to each node. [ArgoCD](https://argo-cd.readthedocs.io/) enhances this setup by managing application deployments through a GitOps repository that serves as the single source of truth. Any changes pushed to this repository are automatically reflected in the registered clusters.

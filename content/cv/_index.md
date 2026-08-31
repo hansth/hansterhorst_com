@@ -32,7 +32,17 @@ My development background gives me a solid understanding of how applications wor
 
 ## Projects
 
-**Rancher ArgoCD Pipeline** [gitlab.com/HansTH/rancher-argocd](https://gitlab.com/HansTH/rancher-argocd)
+**[Multi-Tenant AKS Platform](https://gitlab.com/HansTH/k8s-azure)**
+
+- **Terraform:** Provisions the AKS cluster, Key Vault, and Blob Storage, and generates each customer's GitOps manifests
+- **FluxCD:** GitOps deployments without manual intervention, six-stage dependency-ordered sync
+- **Kustomize:** For per-customer overlays on a shared base manifest set
+- **Azure Key Vault:** Centralized secrets, synced into the cluster via the Secrets Store CSI driver
+- **CloudNativePG:** Manages PostgreSQL per customer; Barman Cloud plugin backup to Blob Storage
+- **Traefik:** Ingress controller routing external traffic into the cluster
+- **cert-manager:** For automatic TLS certificates via Let's Encrypt
+
+**[Rancher ArgoCD Pipeline](https://gitlab.com/HansTH/rancher-argocd)**
 
 - **Rancher:** For multi-cluster management, simplifying cluster administration and upgrades
 - **ArgoCD:** GitOps deployments without manual intervention
@@ -41,7 +51,7 @@ My development background gives me a solid understanding of how applications wor
 - **Traefik IngressRoute:** HTTPS routing to internal services on the cluster
 - **cert-manager:** For automatic TLS certificates via Let's Encrypt and Cloudflare DNS validation
 
-**Kubernetes HomeLab** [gitlab.com/homelab7894101/k8s-homelab](https://gitlab.com/homelab7894101/k8s-homelab)
+**[Kubernetes HomeLab](https://gitlab.com/homelab7894101/k8s-homelab)**
 
 - **kubeadm:** For setting up an HA cluster with three control planes and one worker node
 - **Cilium CNI:** As a kube-proxy replacement, including Cilium Gateway API
@@ -53,7 +63,7 @@ My development background gives me a solid understanding of how applications wor
 - **Prometheus + Grafana:** For monitoring and observability of cluster and workloads
 - **HAProxy + UniFi:** For API server load balancing and network VLAN segmentation
 
-**Jenkins CI/CD Pipeline** [gitlab.com/devops8614042](https://gitlab.com/devops8614042)
+**[Jenkins CI/CD Pipeline](https://gitlab.com/devops8614042)**
 
 - **Jenkins:** CI/CD pipelines with version control and automatic commits to Git
 - **Podman:** For building container images from Jenkins without a Docker daemon
