@@ -1,5 +1,13 @@
 {{ define "main" }}
   {{ .Content }}
+
+  <div class="featured-project">
+    <h2>Latest Project: Multi-Tenant AKS Platform</h2>
+    <p>A multi-tenant SaaS platform on Azure AKS, provisioned with Terraform and deployed through a FluxCD GitOps pipeline.</p>
+    <p>Each customer gets their own isolated environment, fully automated from infrastructure to application.</p>
+    <p><a href="/devops/">Start reading →</a></p>
+  </div>
+
   <div class="terminal-nav">
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
   </div>

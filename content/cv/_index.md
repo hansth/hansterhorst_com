@@ -23,10 +23,11 @@ My development background gives me a solid understanding of how applications wor
 
 - [CKA](https://www.credly.com/badges/42b48583-e987-4d04-830c-37731b747bbb) — Certified Kubernetes Administrator
 - [CKAD](https://www.credly.com/badges/dc72b82d-f473-491a-aba3-f879caa2485b) — Certified Kubernetes Application Developer
+- [KCSA](https://www.credly.com/badges/9c20b140-72de-4593-af48-025689f22a24) — Kubernetes and Cloud Native Security Associate
 - [KCNA](https://www.credly.com/badges/1d2b6127-d8d5-4b19-9839-b263337bc744) — Kubernetes and Cloud Native Associate
 - [DevOps Practitioner](https://www.credly.com/badges/caa2887e-d3e3-40bc-8084-fba7920fa4f8) — TWN DevOps Bootcamp
 - [AWS CCP](https://www.credly.com/badges/3e1d3967-0f7e-4a08-be25-f791fc13ab80) — AWS Certified Cloud Practitioner
-- KCSA + KCNS — planned end of 2026 _(Kubestronaut)_
+- CKS — planned end of 2026 _(Kubestronaut)_
 
 ---
 
@@ -75,6 +76,11 @@ My development background gives me a solid understanding of how applications wor
 
 ## Work Experience
 
+**Kubernetes Engineer (in transition) — KubeCraft** | _2026 – present_
+
+- Building self-initiated Kubernetes projects (multi-tenant AKS platform, GitOps pipelines, HomeLab) to gain production- and staging-level operational experience
+- Applying GitOps, IaC, and platform engineering practices learned through the KubeCraft community and hands-on experimentation
+
 **Full-Stack Developer — Twict** | _2022 – 2026_
 
 - Implemented i18n translation functionality for international users
@@ -85,7 +91,7 @@ My development background gives me a solid understanding of how applications wor
 **Process Operator — Various companies** | _2011 – 2020_
 
 - Monitored and optimized processes with a focus on quality control and operational reliability
-- Strong experience in teamwork, problem-solving and working under pressure
+- Strong experience in teamwork, problem-solving, and working under pressure
 
 **Matchmove Artist — Escape Studios, London** | _2007_
 
@@ -95,6 +101,7 @@ My development background gives me a solid understanding of how applications wor
 **Graphic Industry — Various companies** | _1990 – 2011_
 
 - Over 20 years in various roles, specializing in print production, layout, and prepress
+- As a shift-leader, I mentored and trained staff and managed the planning across three printing presses.
 
 ---
 

@@ -2,38 +2,15 @@
 title: DevOps
 ---
 
-This was my first real end-to-end project as a DevOps engineer — a series of hands-on portfolio pieces built after completing the [**TWN DevOps Bootcamp**](https://www.techworld-with-nana.com/devops-bootcamp). Starting from a blank VPS and ending with a working CI/CD pipeline, it covers the full stack I built and learned from scratch.
+My latest project: a multi-tenant SaaS platform on [**Azure AKS**](https://gitlab.com/HansTH/k8s-azure), provisioned with Terraform and deployed through a FluxCD GitOps pipeline. Each customer gets their own isolated n8n instance, with infrastructure and application deployment fully automated from Git.
 
 ## Architecture
 
-```
-           ┌────────────────────────────────┐
-           │            Ubuntu VPS          │
-           │ UFW · Fail2ban · SSH Hardening │
-           └───────────────┬────────────────┘
-                           │
-                           ▼
- ┌────────────────────────────────────────────────────┐
- │                    K3s Cluster                     │
- │                                                    │
- │ ┌────────────────────────────────────────────────┐ │
- │ │ Traefik Ingress · cert-manager · Let’s Encrypt │ │
- │ └───────┬────────────────────────────────┬───────┘ │
- │         │                                │         │
- │   jenkins.domain                    nexus.domain   │
- │         │                                │         │
- │         ▼                                ▼         │
- │ ┌───────────────┐               ┌────────────────┐ │
- │ │    Jenkins    │  push image   │      Nexus     │ │
- │ │ Podman Builds │──────────────>│ Image Registry │ │
- │ │               │               │                │ │
- │ └───────┬───────┘               └───────┬────────┘ │
- └─────────│───────────────────────────────│──────────┘
-           │                               │
-           ▼                               ▼
-        ┌─────┐                         ┌─────┐
-        │ Git │                         │ K8S │
-        └─────┘                         └─────┘
-```
+![Provisioning and GitOps sync architecture](/devops-architecture.svg)
 
 ## Projects
+
+- [Multi-Tenant AKS Platform](https://gitlab.com/HansTH/k8s-azure)
+- [Rancher ArgoCD Pipeline](https://gitlab.com/HansTH/rancher-argocd)
+- [Kubernetes HomeLab](https://gitlab.com/homelab7894101/k8s-homelab)
+- [Jenkins CI/CD Pipeline](https://gitlab.com/devops8614042)

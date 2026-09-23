@@ -1,0 +1,36 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+  {{ if .TableOfContents }}
+    <nav class="toc">
+      <strong>Table of contents</strong>
+      <div class="toc-content">
+        {{ .TableOfContents }}
+      </div>
+    </nav>
+  {{ end }}
+
+  {{ .Content }}
+  {{ partial "date.html" .Date}}
+
+  <div class="terminal-nav">
+    {{ with .NextInSection }}
+      <div class="prev-nav">
+          <a href="{{ .RelPermalink }}">..prev</a>
+      </div>
+    {{ end }}
+    <div class="back-nav">
+      <a href="../" class="back-link">..</a>
+    </div>
+    {{ with .PrevInSection }}
+      <div class="next-nav">
+        <a href="{{ .RelPermalink }}">next..</a>
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="terminal-nav">
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  </div>
+{{ end }}

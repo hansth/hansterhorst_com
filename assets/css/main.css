@@ -286,6 +286,27 @@ hr {
   display: inline-block;
 }
 
+/* Featured project card */
+.featured-project {
+  margin: var(--spacing-base) 0;
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+}
+
+.featured-project h2 {
+  margin-top: 0;
+}
+
+.featured-project p:last-child {
+  margin-bottom: 0;
+}
+
+.featured-project p > a {
+  font-weight: bold;
+}
+
 /* Header styles */
 header {
   position: sticky;
