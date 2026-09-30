@@ -4,9 +4,11 @@ Date: 2025-10-01
 Draft: false
 ---
 
-Four years as a Full-Stack developer with experience in Java and Angular, currently transitioning into Kubernetes engineering. I started in 2025 with a K3S cluster, and later built my own Homelab cluster with three control planes and one worker node. In doing so, I earned the KCNA, CKAD, and CKA, with the goal of becoming a Kubestronaut this year.
+I’m a Kubernetes engineer with 4 years of full-stack development experience. I hold the CKA, CKAD, KCSA, and KCNA, and I’m preparing for the CKS to become a Kubestronaut. I started with Kubernetes in 2025 on a single K3s cluster. Since then, I’ve built a homelab cluster with three control-plane nodes and one worker node, and I’ve taken on real-world projects through KubeCraft’s DevOps program, getting feedback from senior engineers.
 
-My development background gives me a solid understanding of how applications work from the inside and what it means to be a developer. This makes me a better engineer and helps me find the best solutions for deploying applications on Kubernetes.
+My background in Java and Angular helps me understand how applications work from the inside and what it means to be a developer. This makes me a better engineer and helps me find the best solutions for deploying applications on Kubernetes.
+
+I’m looking for a Kubernetes or Platform Engineer role where I can build production experience and use my hands-on skills to contribute to your team.
 
 ---
 
@@ -51,6 +53,8 @@ My development background gives me a solid understanding of how applications wor
 - **KSOPS:** Kustomize plugin for SOPS/age secret encryption in ArgoCD
 - **Traefik IngressRoute:** HTTPS routing to internal services on the cluster
 - **cert-manager:** For automatic TLS certificates via Let's Encrypt and Cloudflare DNS validation
+- **Terraform:** Provisions two DigitalOcean Droplets (VMs)
+- **Ansible:** Configures the Droplets with k3s, cert-manager, Rancher, and ArgoCD
 
 **[Kubernetes HomeLab](https://gitlab.com/homelab7894101/k8s-homelab)**
 
@@ -76,10 +80,11 @@ My development background gives me a solid understanding of how applications wor
 
 ## Work Experience
 
-**Kubernetes Engineer (in transition) — KubeCraft** | _2026 – present_
+**Kubernetes Engineer (Internship) — KubeCraft** | _2026 – present_
 
-- Building self-initiated Kubernetes projects (multi-tenant AKS platform, GitOps pipelines, HomeLab) to gain production- and staging-level operational experience
-- Applying GitOps, IaC, and platform engineering practices learned through the KubeCraft community and hands-on experimentation
+- Multi-tenant SaaS platform on Azure AKS: Terraform provisions the cluster, Key Vault, and Blob Storage, and FluxCD deploys an n8n instance per customer
+- Multi-cluster management with Rancher and ArgoCD on DigitalOcean, provisioned with Terraform and configured with Ansible
+- HA homelab cluster built with kubeadm (three control planes, one worker), running Cilium, Longhorn, FluxCD, and Prometheus/Grafana
 
 **Full-Stack Developer — Twict** | _2022 – 2026_
 
@@ -88,7 +93,7 @@ My development background gives me a solid understanding of how applications wor
 - Developed a reusable Angular component for international phone number validation
 - Contributed to code quality improvements through refactoring and optimization
 
-**Process Operator — Various companies** | _2011 – 2020_
+**Process Operator — Various companies** | _2011 – 2022_
 
 - Monitored and optimized processes with a focus on quality control and operational reliability
 - Strong experience in teamwork, problem-solving, and working under pressure
@@ -120,10 +125,13 @@ My development background gives me a solid understanding of how applications wor
 ## Technical Skills
 
 - **Kubernetes & cloud-native:** Kubernetes, K3s, Rancher, Flux, ArgoCD, Helm, Kustomize, Prometheus, Grafana
-- **DevOps & CI/CD:** Jenkins, Docker, Podman, Renovate 
+- **DevOps & CI/CD:** Jenkins, GitHub Actions, GitLab CI/CD, Docker, Podman, Renovate 
+- **Infrastructure as Code:** Terraform, Ansible
+- **Cloud:** Azure AKS, DigitalOcean, AWS
 - **Registries & Artifacts:** Sonatype Nexus 
 - **Development:** Java, Spring Boot, Angular, React, TypeScript, JavaScript 
 - **Infrastructure:** Linux, HAProxy, UniFi
+
 ---
 
 ## Beyond Tech

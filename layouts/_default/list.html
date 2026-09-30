@@ -3,16 +3,11 @@
     {{ .Content }}
     {{ if .Pages }}
     <h2>Related Articles</h2>
-    <div class="time-list">
-        <ul>
-            {{ range .Pages }}
-            <li>
-                <span>•<!--{{- partial "date" .Date -}}--></span>
-                <div><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
-            </li>
-            {{ end }}
-        </ul>
-    </div>
+    <ul>
+        {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+    </ul>
     {{ end }}
     <div class="terminal-nav">
       {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

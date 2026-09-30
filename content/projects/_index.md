@@ -22,7 +22,7 @@ This project is a multi-tenant SaaS platform on Azure AKS, provisioned with Terr
 
 ## [Rancher ArgoCD Pipeline](https://gitlab.com/HansTH/rancher-argocd)
 
-In this project, [Rancher](https://www.rancher.com/) provides a centralized control plane for managing multiple Kubernetes clusters. It enables registering, monitoring health, and upgrading clusters without requiring SSH access to each node. [ArgoCD](https://argo-cd.readthedocs.io/) enhances this setup by managing application deployments through a GitOps repository that serves as the single source of truth. Any changes pushed to this repository are automatically reflected in the registered clusters.
+In this project, [Rancher](https://www.rancher.com/) provides a centralized control plane for managing multiple Kubernetes clusters. It enables registering, monitoring health, and upgrading clusters without requiring SSH access to each node. [ArgoCD](https://argo-cd.readthedocs.io/) enhances this setup by managing application deployments through a GitOps repository that serves as the single source of truth. Any changes pushed to this repository are automatically reflected in the registered clusters. Terraform provisions the DigitalOcean Droplets and Ansible configures them.
 
 - **Rancher:** For multi-cluster management, simplifying cluster administration and upgrades
 - **ArgoCD:** GitOps deployments without manual intervention
@@ -30,6 +30,8 @@ In this project, [Rancher](https://www.rancher.com/) provides a centralized cont
 - **KSOPS:** Kustomize plugin for SOPS/age secret encryption in ArgoCD
 - **Traefik IngressRoute:** HTTPS routing to internal services on the cluster
 - **cert-manager:** For automatic TLS certificates via Let's Encrypt and Cloudflare DNS validation
+- **Terraform:** Provisions two DigitalOcean Droplets (VMs)
+- **Ansible:** Configures the Droplets with k3s, cert-manager, Rancher, and ArgoCD
 
 ---
 
@@ -53,8 +55,8 @@ My Homelab projects to learn Kubernetes concepts through practical, hands-on tas
 
 This project groups several related projects focused on building tools, with the main project being the setup of a K3s cluster with a fully automated CI/CD pipeline using Jenkins, Podman, and Sonatype Nexus.
 
-- **Jenkins:** CI/CD pipelines with version control and automated Git commits
-- **Podman:** For building container images in Jenkins without Docker daemon
-- **Sonatype Nexus:** My private registry for storing and sharing container images
-- **Traefik IngressRoute:** HTTPS routing to internal cluster services
-- **cert-manager:** For automatic TLS certificates using Let's Encrypt and DNS validation
+- **Jenkins:** CI/CD pipelines with version control and automatic commits to Git
+- **Podman:** For building container images from Jenkins without a Docker daemon
+- **Sonatype Nexus:** My private registry for central storage and distribution of container images
+- **Traefik IngressRoute:** HTTPS routing to internal services on the cluster
+- **cert-manager:** For automatic TLS certificates via Let's Encrypt and Cloudflare DNS validation

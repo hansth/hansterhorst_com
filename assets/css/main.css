@@ -389,31 +389,6 @@ header {
   text-decoration: none;
 }
 
-/* Time list */
-.time-list ul {
-  list-style: none;
-  margin-left: 0;
-}
-
-.time-list li {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: var(--gap-base);
-  align-items: start;
-  padding: calc(var(--spacing-sm) / 2) 0;
-}
-
-@media (max-width: var(--breakpoint-mobile)) {
-  .time-list li {
-    grid-template-columns: 1fr;
-    gap: var(--gap-small);
-  }
-
-  .time-list time {
-    font-size: var(--font-size-small);
-  }
-}
-
 /* Main menu navigation styles */
 .terminal-nav {
   font-family: var(--font-family-mono), serif;
