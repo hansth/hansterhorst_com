@@ -1,10 +1,10 @@
 ---
 title: Hello
 ---
-I'm **Hans ter Horst**, a Kubernetes Engineer based in the Netherlands, open to new opportunities.
+I'm **Hans ter Horst**, a Kubernetes engineer based in the Netherlands, looking for a Kubernetes or Platform Engineer role.
 
-With four years of full-stack development in Java and Angular, I bring something most Kubernetes engineers don't have: a solid understanding of how applications work from the inside. That perspective helps me make better decisions when deploying, scaling, and troubleshooting workloads on Kubernetes.
+Before Kubernetes, I spent four years as a full-stack developer in Java and Angular. That background helps me understand how applications work from the inside, which leads to better decisions when deploying, scaling, and troubleshooting them on Kubernetes.
 
-I'm currently doing a Kubernetes Engineer internship at KubeCraft, working on real-world projects with feedback from senior engineers. I've built production-style platforms like a multi-tenant SaaS deployment on [Azure AKS](https://gitlab.com/HansTH/k8s-azure), run my own Homelab cluster from scratch, and earned the KCNA, KCSA, CKAD, and CKA certifications, with Kubestronaut as the next goal. This site documents that journey: projects, articles, and things I learned by breaking stuff and figuring out why.
+I started with Kubernetes in 2025 on a single K3s cluster. Since then, I've built a homelab cluster with three control-plane nodes and one worker node, and earned the CKA, CKAD, KCSA, and KCNA. Next is the CKS to become a Kubestronaut. As an intern in KubeCraft's DevOps program, I work on real-world projects with feedback from senior engineers, such as a [multi-tenant SaaS platform on Azure AKS](/projects/#multi-tenant-aks-platform).
 
-When I'm not in the terminal, I'm on my mountain bike or planning the next bikepacking trip.
+This site documents that journey: projects, articles, and things I learned by breaking stuff and figuring out why. And when I'm not in the terminal, I'm on my mountain bike or planning the next bikepacking trip.

@@ -2,7 +2,25 @@
 title: Projects
 ---
 
-A collection of hands-on Kubernetes projects: CI/CD pipelines, GitOps deployments, and my Homelab. I share what I build, the problems I run into, and what I learn along the way.
+A collection of hands-on Kubernetes projects: CI/CD pipelines, GitOps deployments, and my homelab. I share what I build, the problems I run into, and what I learn along the way.
+
+---
+
+## [DevOps CI/CD Pipeline](https://github.com/hansth/k8s-gitops)
+
+This project is a CI/CD pipeline for a todo application that shows how code moves from a devcontainer to a Kubernetes cluster. An OpenAPI spec generates a Java interface for the Quarkus backend and TypeScript types for the React frontend. Every pull request is tested, checked for 80% coverage, built into a Docker image, and scanned with Trivy. Release Please creates versions, tags, and CHANGELOGs from Conventional Commits, with each tag publishing images to GHCR. Changes are first tested in a local dev cluster, pushed to GitHub, and then verified in a prod cluster after the release.
+
+- **OpenAPI:** API-first design that generates the Java interface and the TypeScript types
+- **Quarkus:** Backend REST API on Java 25 with Hibernate and Flyway
+- **React:** Frontend in React 19 and TypeScript, served by Nginx
+- **Devcontainer + mise:** Reproducible development environment with pinned tool versions, works on Linux and macOS
+- **GitHub Actions:** Test and Docker workflows per component, with an 80% coverage gate and a report on every pull request
+- **Trivy:** Security scan of the Docker images for HIGH and CRITICAL vulnerabilities
+- **Release Please:** Automated versions, tags, and CHANGELOGs from Conventional Commits
+- **GHCR:** Publishes the container images on every release tag
+- **k3d + Kustomize:** Local dev and prod clusters with shared base manifests and an overlay per environment
+- **CloudNativePG:** Runs PostgreSQL in the cluster through a Kubernetes operator
+- **pre-commit:** Git hooks for Commitizen, google-java-format, Checkstyle, oxlint, and oxfmt
 
 ---
 
@@ -37,7 +55,7 @@ In this project, [Rancher](https://www.rancher.com/) provides a centralized cont
 
 ## [Kubernetes HomeLab](https://gitlab.com/homelab7894101/k8s-homelab)
 
-My Homelab projects to learn Kubernetes concepts through practical, hands-on tasks. The goal is to understand Kubernetes concepts by deploying and managing real applications on my multi-node cluster.
+My homelab projects to learn Kubernetes concepts through practical, hands-on tasks. The goal is to understand Kubernetes concepts by deploying and managing real applications on my multi-node cluster.
 
 - **kubeadm:** For setting up an HA cluster with three control planes and one worker node
 - **Cilium CNI:** As a kube-proxy replacement, including Cilium Gateway API
