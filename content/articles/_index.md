@@ -2,7 +2,7 @@
 title: Articles
 ---
 
-I write about what I'm learning: Kubernetes, containers, Linux, CI/CD, and cloud architecture. These articles reflect hands-on experience: things I built, broke, and eventually figured out.
+I write about what I'm learning: Kubernetes, containers, Linux, CI/CD, and cloud architecture. These articles reflect hands-on experience: things I built, broke, and eventually figured out, including my [CKS homelab projects](/articles/kubernetes/cks/).
 
 If you're transitioning into DevOps or Kubernetes, I hope you find something useful here.
 

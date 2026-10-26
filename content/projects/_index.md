@@ -69,6 +69,16 @@ My homelab projects to learn Kubernetes concepts through practical, hands-on tas
 
 ---
 
+## [CKS Homelab Projects](/articles/kubernetes/cks/)
+
+Hands-on projects from my CKS preparation, built on my kubeadm homelab cluster. Each project hardens or maintains the cluster, and explains why each step matters for security.
+
+- [**kube-bench:**](/articles/kubernetes/cks/1-kube-bench/) Runs the CIS Kubernetes Benchmark as a Job and fixes the findings on every control plane node
+- [**RBAC Users:**](/articles/kubernetes/cks/2-rbac-users/) Certificate-based users with their own kubeconfig files and least-privilege permissions
+- [**Cluster Upgrade:**](/articles/kubernetes/cks/3-k8s-cluster-upgrade/) Upgrades the HA cluster from v1.32 to v1.35, one minor version and one node at a time
+
+---
+
 ## [Jenkins CI/CD Pipeline](https://gitlab.com/devops8614042)
 
 This project groups several related projects focused on building tools, with the main project being the setup of a K3s cluster with a fully automated CI/CD pipeline using Jenkins, Podman, and Sonatype Nexus.
