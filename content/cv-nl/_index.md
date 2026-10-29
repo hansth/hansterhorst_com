@@ -86,8 +86,6 @@ Ik zoek een rol als Kubernetes- of Platform Engineer waarin ik productie-ervarin
 
 **[CKS Homelab-projecten](/articles/kubernetes/cks/)**
 
-Studieprojecten uit mijn CKS-voorbereiding, gebouwd op mijn kubeadm homelab-cluster. Elk project versterkt of onderhoudt de cluster en legt uit waarom elke stap belangrijk is voor de beveiliging.
-
 - [**kube-bench:**](/articles/kubernetes/cks/1-kube-bench/) Draait de CIS Kubernetes Benchmark als Job en lost CIS-aanbevelingen op elke control-plane node op
 - [**RBAC Users:**](/articles/kubernetes/cks/2-rbac-users/) Gebruikers met certificaten, eigen kubeconfig-bestanden en least-privilege rechten
 - [**Cluster Upgrade:**](/articles/kubernetes/cks/3-k8s-cluster-upgrade/) Upgrade het HA-cluster van v1.32 naar v1.35, één minor versie en één node tegelijk
