@@ -47,7 +47,7 @@ The [kube-bench repository](https://github.com/aquasecurity/kube-bench) has read
 The original `job-master.yaml` uses a `nodeSelector` and a toleration to schedule the Pod on a tainted control plane node. In my homelab, the control plane nodes are untainted because they run workloads. I comment out both settings and pin the Job with `nodeName`.
 
 **Copy the raw YAML from GitHub**
-```text
+```
 https://raw.githubusercontent.com/aquasecurity/kube-bench/main/job-master.yaml
 ```
 
@@ -320,7 +320,7 @@ kubectl apply -f kube-bench-master-1-job.yaml
 kubectl wait --for=condition=complete job/kube-bench-master-1
 kubectl logs job/kube-bench-master-1 | grep '1.1.12'
 ```
-```text
+```
 [PASS] 1.1.12 Ensure that the etcd data directory ownership is set to etcd:etcd (Automated)
 ```
 

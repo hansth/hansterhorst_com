@@ -188,7 +188,7 @@ EOF
 ```bash
 kubectl get csr $K8S_USER
 ```
-```text
+```
 NAME      AGE   SIGNERNAME                            REQUESTOR          REQUESTEDDURATION   CONDITION
 hans-adm  5s    kubernetes.io/kube-apiserver-client   kubernetes-admin   30d                 Pending
 ```
@@ -464,7 +464,7 @@ Now test this with the real certificates, not with `--as`.
 ```bash
 kubectl --kubeconfig=hans-adm.conf auth whoami
 ```
-```text
+```
 ATTRIBUTE   VALUE
 Username    hans-adm
 Groups      [homelab-admins system:authenticated]
@@ -474,7 +474,7 @@ Groups      [homelab-admins system:authenticated]
 ```bash
 kubectl --kubeconfig=hans-dev.conf auth whoami
 ```
-```text
+```
 ATTRIBUTE   VALUE
 Username    hans-dev
 Groups      [homelab-devs system:authenticated]
@@ -488,7 +488,7 @@ The admin can read and change everything in the cluster.
 ```bash
 kubectl --kubeconfig=hans-adm.conf get nodes
 ```
-```text
+```
 NAME           STATUS   ROLES           AGE    VERSION
 k8s-master-1   Ready    control-plane   180d   v1.35.5
 k8s-master-2   Ready    control-plane   180d   v1.35.5
@@ -587,7 +587,7 @@ A CKS task may ask to identify who has excessive access. The same checks show th
 ```bash
 kubectl get clusterrolebindings -o wide | grep -E 'NAME|cluster-admin'
 ```
-```text
+```
 NAME                     ROLE                        AGE    USERS   GROUPS                    SERVICEACCOUNTS
 cluster-admin            ClusterRole/cluster-admin   180d           system:masters
 homelab-admins           ClusterRole/cluster-admin   10m            homelab-admins

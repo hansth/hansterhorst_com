@@ -209,7 +209,7 @@ vim /etc/apt/sources.list.d/kubernetes.list
 ```
 
 **Change the version path in the file to `1.35`**
-```text
+```
 deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.35/deb/ /
 ```
 
