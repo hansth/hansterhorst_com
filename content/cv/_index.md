@@ -84,6 +84,14 @@ I’m looking for a Kubernetes or Platform Engineer role where I can build produ
 - **Prometheus + Grafana:** For monitoring and observability of cluster and workloads
 - **HAProxy + UniFi:** For API server load balancing and network VLAN segmentation
 
+**[CKS Homelab Projects](/articles/kubernetes/cks/)**
+
+Study projects from my CKS preparation, built on my kubeadm homelab cluster. Each project hardens or maintains the cluster, and explains why each step matters for security.
+
+- [**kube-bench:**](/articles/kubernetes/cks/1-kube-bench/) Runs the CIS Kubernetes Benchmark as a Job and fixes CIS recommendations on every control plane node
+- [**RBAC Users:**](/articles/kubernetes/cks/2-rbac-users/) Certificate-based users with their own kubeconfig files and least-privilege permissions
+- [**Cluster Upgrade:**](/articles/kubernetes/cks/3-k8s-cluster-upgrade/) Upgrades the HA cluster from v1.32 to v1.35, one minor version and one node at a time
+
 **[Jenkins CI/CD Pipeline](https://gitlab.com/devops8614042)**
 
 - **Jenkins:** CI/CD pipelines with version control and automatic commits to Git
