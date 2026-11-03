@@ -67,7 +67,7 @@ The project takes six steps. For practice, I work through the sub-tasks with onl
     - As `hans-dev`, create a Deployment in `dev`, and confirm that Pods in `default` are forbidden and that listing nodes is forbidden.
     - Docs: [Authenticating](https://kubernetes.io/docs/reference/access-authn-authz/authentication/), sections X.509 client certificates and API access to authentication information for a client. Search: `kubectl auth whoami`.
 5. [Move the kubeconfig files to the laptop](#step-5-move-the-kubeconfig-files-to-the-laptop)
-    - Copy both kubeconfig files to `~/.kube` on the laptop, and restrict their permissions.
+    - Copy both kubeconfig files to `~/.kube/rbac-users` on the laptop, and restrict their permissions.
     - Use `hans-dev` by default, and `hans-adm` only for single commands.
     - Remove the keys, CSRs, and kubeconfig files from the node.
     - Docs: [Organizing Cluster Access Using kubeconfig Files](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/). Search: `kubeconfig KUBECONFIG environment variable`.
@@ -552,20 +552,22 @@ The kubeconfig files and keys belong on the laptop, not on a control plane node.
 
 **Copy the files from the laptop**
 ```bash
-scp k8s-master-1:~/rbac-users/hans-adm.conf ~/.kube/hans-adm.conf
-scp k8s-master-1:~/rbac-users/hans-dev.conf ~/.kube/hans-dev.conf
-chmod 600 ~/.kube/hans-*.conf
+mkdir -p ~/.kube/rbac-users
+scp k8s-master-1:~/rbac-users/hans-adm.conf ~/.kube/rbac-users/hans-adm.conf
+scp k8s-master-1:~/rbac-users/hans-dev.conf ~/.kube/rbac-users/hans-dev.conf
+chmod 600 ~/.kube/rbac-users/hans-*.conf
 ```
+- `mkdir -p`: Creates the folder for the kubeconfig files of the project. `-p` doesn't fail if the folder already exists.
 
 **Use the normal user by default on the laptop**
 ```bash
-export KUBECONFIG=~/.kube/hans-dev.conf
+export KUBECONFIG=~/.kube/rbac-users/hans-dev.conf
 kubectl get pods
 ```
 
 **Use the admin for a single command**
 ```bash
-kubectl --kubeconfig ~/.kube/hans-adm.conf get nodes
+kubectl --kubeconfig ~/.kube/rbac-users/hans-adm.conf get nodes
 ```
 
 **Remove the keys and files from the node**
@@ -622,7 +624,7 @@ A client certificate can't be revoked or extended: it is valid until it expires.
 
 **Check when the certificate expires**
 ```bash
-kubectl config view --raw --kubeconfig ~/.kube/hans-adm.conf \
+kubectl config view --raw --kubeconfig ~/.kube/rbac-users/hans-adm.conf \
   -o jsonpath='{.users[0].user.client-certificate-data}' | \
   base64 -d | openssl x509 -noout -enddate
 # notAfter=Nov 25 09:20:20 2026 GMT
@@ -632,7 +634,7 @@ To renew, extract the key from the kubeconfig, run [Step 1](#step-1-create-the-c
 
 **Extract the key from the kubeconfig**
 ```bash
-kubectl config view --raw --kubeconfig ~/.kube/hans-adm.conf \
+kubectl config view --raw --kubeconfig ~/.kube/rbac-users/hans-adm.conf \
   -o jsonpath='{.users[0].user.client-key-data}' | base64 -d > hans-adm.key
 chmod 600 hans-adm.key
 ```
@@ -685,7 +687,7 @@ kubectl delete csr hans-adm hans-dev --ignore-not-found
 **Delete the files on the node and the laptop**
 ```bash
 rm -rf ~/rbac-users
-rm ~/.kube/hans-adm.conf ~/.kube/hans-dev.conf
+rm ~/.kube/rbac-users/hans-adm.conf ~/.kube/rbac-users/hans-dev.conf
 ```
 
 ---
