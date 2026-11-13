@@ -89,6 +89,9 @@ I’m looking for a Kubernetes or Platform Engineer role where I can build produ
 - [**kube-bench:**](/articles/kubernetes/cks/1-kube-bench/) Runs the CIS Kubernetes Benchmark as a Job and fixes CIS recommendations on every control plane node
 - [**RBAC Users:**](/articles/kubernetes/cks/2-rbac-users/) Certificate-based users with their own kubeconfig files and least-privilege permissions
 - [**Cluster Upgrade:**](/articles/kubernetes/cks/3-k8s-cluster-upgrade/) Upgrades the HA cluster from v1.32 to v1.35, one minor version and one node at a time
+- [**AppArmor for nginx:**](/articles/kubernetes/cks/4-apparmor-nginx/) Builds a least-privilege AppArmor profile from the kernel log, and stops a shell from running programs or changing the website
+- [**Secret Encryption at Rest:**](/articles/kubernetes/cks/5-secret-encryption-at-rest/) Encrypts Secrets in etcd with `aescbc` on all three API servers, one at a time, and rewrites the existing Secrets
+- [**Cilium WireGuard Encryption:**](/articles/kubernetes/cks/6-cilium-wireguard-encryption/) Encrypts Pod traffic between the nodes with WireGuard, verified with `tcpdump` before and after the change
 
 **[Jenkins CI/CD Pipeline](https://gitlab.com/devops8614042)**
 

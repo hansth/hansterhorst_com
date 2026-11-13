@@ -89,6 +89,9 @@ Ik zoek een rol als Kubernetes- of Platform Engineer waarin ik productie-ervarin
 - [**kube-bench:**](/articles/kubernetes/cks/1-kube-bench/) Draait de CIS Kubernetes Benchmark als Job en lost CIS-aanbevelingen op elke control-plane node op
 - [**RBAC Users:**](/articles/kubernetes/cks/2-rbac-users/) Gebruikers met certificaten, eigen kubeconfig-bestanden en least-privilege rechten
 - [**Cluster Upgrade:**](/articles/kubernetes/cks/3-k8s-cluster-upgrade/) Upgrade het HA-cluster van v1.32 naar v1.35, één minor versie en één node tegelijk
+- [**AppArmor for nginx:**](/articles/kubernetes/cks/4-apparmor-nginx/) Bouwt een least-privilege AppArmor-profiel op basis van de kernellog, en voorkomt dat een shell programma's start of de website wijzigt
+- [**Secret Encryption at Rest:**](/articles/kubernetes/cks/5-secret-encryption-at-rest/) Versleutelt Secrets in etcd met `aescbc` op alle drie API-servers, één tegelijk, en herschrijft de bestaande Secrets
+- [**Cilium WireGuard Encryption:**](/articles/kubernetes/cks/6-cilium-wireguard-encryption/) Versleutelt het Pod-verkeer tussen de nodes met WireGuard, gecontroleerd met `tcpdump` voor en na de wijziging
 
 **[Jenkins CI/CD Pipeline](https://gitlab.com/devops8614042)**
 

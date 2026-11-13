@@ -14,10 +14,6 @@ tags:
 ---
 # Project AppArmor for nginx
 
-
-
-
-
 In this project, I built a least-privilege AppArmor profile for an nginx web server in my homelab cluster. It's based on the [RBAC Users](/articles/kubernetes/cks/2-rbac-users/) project, where the `hans-adm` user prepares the cluster, and the `hans-dev` user deploys nginx in the `dev` Namespace.
 
 RBAC decides who can create a Pod and who can run `kubectl exec` in it. It can't control what a process inside the container does. The default profile `cri-containerd.apparmor.d` protects the node but allows almost everything inside the container. If an attacker finds a bug in the web application, they can start a shell, modify the website, or read the ServiceAccount token. A custom AppArmor profile allows only what nginx needs to serve the website. Everything else is blocked and logged.
@@ -42,7 +38,6 @@ The profile allows the actions nginx needs and blocks the actions an attacker ne
 | Run programs such as `ls` from a shell        | No      | An attacker needs programs to look around             |
 | Write to `/usr/share/nginx/html`              | No      | Stops an attacker from changing the website           |
 | Read the ServiceAccount token                 | No      | Stops an attacker from calling the Kubernetes API     |
-|                                               |         |                                                       |
 
 Two things about the official `nginx` image matter for this project:
 
