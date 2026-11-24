@@ -661,7 +661,7 @@ spec:
       type: DirectoryOrCreate
 ```
 
-> **_Note:_** This passes the four checks, but nothing gets logged yet: the API server only writes audit events once an audit policy is set with the `--audit-policy-file` flag.
+> **_Note:_** This passes the four checks, but nothing gets logged yet: the API server only writes audit events once an audit policy is set with the `--audit-policy-file` flag. The [Audit Logging](/articles/kubernetes/cks/8-audit-logging/) project adds the policy and moves the log to `/var/log/kubernetes/audit/audit.log`.
 
 **3. Wait until the Pod is ready**
 ```bash
